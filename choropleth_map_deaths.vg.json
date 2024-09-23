@@ -1,0 +1,13 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Death Rates Data Test",
+  "data": {
+    "url": "rate.csv",
+    "format": {"type": "csv"}
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "State", "type": "nominal"},
+    "y": {"field": "Deaths", "type": "quantitative"}
+  }
+}
