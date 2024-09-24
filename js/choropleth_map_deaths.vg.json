@@ -49,8 +49,8 @@
             "title": "Crude Death Rate (Per 1,000 Population)",
             "orient": "bottom-left",
             "direction": "horizontal",
-            "titleFontSize": 9,
-            "labelFontSize": 8,
+            "titleFontSize": 11,
+            "labelFontSize": 10,
             "gradientLength": 250,
             "titleLimit": 250,
             "offset":5
