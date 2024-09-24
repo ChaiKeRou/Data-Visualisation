@@ -30,7 +30,7 @@
         {
           "lookup": "properties.name",
           "from": {
-            "data": {"url": "C:/Users/DELL/Documents/GitHub/FIT3179-DataVisualisation2/data/crude_death.csv"},
+            "data": {"url": "https://raw.githubusercontent.com/ChaiKeRou/FIT3179-DataVisualisation2/main/data/crude_death.csv"},
             "key": "State",
             "fields": ["Deaths"]
           }
