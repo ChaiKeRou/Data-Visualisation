@@ -26,17 +26,43 @@
         "url": "https://raw.githubusercontent.com/ChaiKeRou/3179/main/js/malaysia.district.json",
         "format": {"type": "topojson", "feature": "malaysia.district"}
       },
-      "mark": {"type": "geoshape", "stroke": "black", "strokeWidth": 0.5, "fill": "lightgray"},
+      "mark": {"type": "geoshape", "stroke": "#7c5d5d","strokeWidth": 1},
       "transform": [
         {
           "lookup": "properties.name",
           "from": {
-            "data": {"url": "https://raw.githubusercontent.com/ChaiKeRou/3179/main/data/crude_death_state_district.csv"},
+            "data": {
+              "url": "https://raw.githubusercontent.com/ChaiKeRou/3179/main/data/crude_death_state_district.csv"
+            },
             "key": "Administrative district",
             "fields": ["Crude death rate"]
           }
         }
-      ]
+      ],
+      "encoding": {
+        "color": {
+          "field": "Crude death rate",
+          "type": "quantitative",
+          "scale": {
+            "domain": [4, 9], 
+            "range": ["#fee5d9","#fcae91", "#fb6a4a","#de2d26", "#a50f15"] 
+          },
+          "legend": {
+            "title": "Crude Death Rate (Per 1,000 Population)",
+            "orient": "bottom-left",
+            "direction": "horizontal",
+            "titleFontSize": 11,
+            "labelFontSize": 10,
+            "gradientLength": 250,
+            "titleLimit": 250,
+            "offset":5
+          }
+        },
+        "tooltip": [
+          {"field": "properties.name", "type": "nominal", "title": "State"},
+          {"field": "Crude death rate", "type": "quantitative", "title": "Crude Death Rate"}
+        ]
+      }
     },
     {
       "data": {
