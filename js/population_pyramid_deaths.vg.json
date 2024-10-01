@@ -1,21 +1,20 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": { "url": "data/population.json"},
+    "data": { "url": "https://raw.githubusercontent.com/ChaiKeRou/3179/main/data/crude_death_age_gender.csv"},
     "transform": [
-      {"filter": "datum.year == 2000"},
       {"calculate": "datum.sex == 2 ? 'Female' : 'Male'", "as": "gender"},
-      {"calculate": "datum.sex == 2 ? -datum.people : datum.people", "as": "signed_people"}
+      {"calculate": "datum.sex == 2 ? -datum.people : datum.people", "as": "deaths"}
     ],
     "width": 300,
     "height": 200,
     "mark": "bar",
     "encoding": {
       "y": {
-        "field": "age",
+        "field": "Age group",
         "axis": null, "sort": "descending"
       },
       "x": {
-        "aggregate": "sum", "field": "signed_people",
+        "aggregate": "sum", "field": "deaths",
         "title": "population",
         "axis": {"format": "s"}
       },
