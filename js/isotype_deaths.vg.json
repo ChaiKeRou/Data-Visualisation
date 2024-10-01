@@ -1,0 +1,62 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "config": {"view": {"stroke": ""}},
+    "width": 800,
+    "height": 350,
+    "data": {
+      "values": [
+        {"ethnic_group": "Malay"},
+        {"ethnic_group": "Malay"},
+        {"ethnic_group": "Malay"},
+        {"ethnic_group": "Malay"},
+        {"ethnic_group": "Malay"},
+        {"ethnic_group": "Malay"},
+        {"ethnic_group": "Chinese"},
+        {"ethnic_group": "Chinese"},
+        {"ethnic_group": "Chinese"},
+        {"ethnic_group": "Chinese"},
+        {"ethnic_group": "Chinese"},
+        {"ethnic_group": "Chinese"},
+        {"ethnic_group": "Chinese"},
+        {"ethnic_group": "Indians"},
+        {"ethnic_group": "Indians"},
+        {"ethnic_group": "Indians"},
+        {"ethnic_group": "Indians"},
+        {"ethnic_group": "Indians"},
+        {"ethnic_group": "Indians"},
+        {"ethnic_group": "Indians"},
+        {"ethnic_group": "Indians"},
+        {"ethnic_group": "Other Bumiputera"},
+        {"ethnic_group": "Other Bumiputera"},
+        {"ethnic_group": "Other Bumiputera"},
+        {"ethnic_group": "Other Bumiputera"},
+        {"ethnic_group": "Other Bumiputera"},
+        {"ethnic_group": "Other Bumiputera"},
+        {"ethnic_group": "Others"},
+        {"ethnic_group": "Others"},
+        {"ethnic_group": "Others"},
+        {"ethnic_group": "Others"},
+        {"ethnic_group": "Others"},
+        {"ethnic_group": "Others"},
+        {"ethnic_group": "Others"},
+        {"ethnic_group": "Others"},
+        {"ethnic_group": "Others"}
+      ]
+    },
+    "transform": [
+      {
+        "calculate": "{'Malay': '🐄', 'Chinese': '🐖', 'Indians': '🐏', 'Other Bumiputera': '❤️', 'Others': '❤️'}[datum.ethnic_group]",
+        "as": "emoji"
+      },
+      {"window": [{"op": "rank", "as": "rank"}], "groupby": ["ethnic_group"]}
+    ],
+    "mark": {"type": "text", "baseline": "middle"},
+    "encoding": {
+      "x": {"field": "rank", "type": "ordinal"},
+      "y": {"field": "ethnic_group", "type": "nominal", "sort": null, "title": "Ethnic Group"},
+      
+      "text": {"field": "emoji", "type": "nominal"},
+      "size": {"value": 65}
+    }
+  }
+  
