@@ -10,8 +10,8 @@
   "height": 500,
   "projection": {
     "type": "mercator",
-    "center": [110, 2],  
-    "scale": 1500        
+    "center": [110, 1],  
+    "scale": 1800        
   },
   "layer": [
     {
@@ -23,10 +23,20 @@
     },
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/ChaiKeRou/3179/main/js/ne_10m.json",
-        "format": {"type": "topojson", "feature": "ne_10m_admin_0_countries"}
+        "url": "https://raw.githubusercontent.com/ChaiKeRou/3179/main/js/malaysia.district.json",
+        "format": {"type": "topojson", "feature": "malaysia.district"}
       },
-      "mark": {"type": "geoshape", "stroke": "black", "strokeWidth": 0.5, "fill": "lightgray"}
+      "mark": {"type": "geoshape", "stroke": "black", "strokeWidth": 0.5, "fill": "lightgray"},
+      "transform": [
+        {
+          "lookup": "properties.name",
+          "from": {
+            "data": {"url": "https://raw.githubusercontent.com/ChaiKeRou/3179/main/data/crude_death_state_district.csv"},
+            "key": "Administrative district",
+            "fields": ["Crude death rate"]
+          }
+        }
+      ]
     },
     {
       "data": {
