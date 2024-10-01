@@ -1,62 +1,53 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "config": {"view": {"stroke": ""}},
-    "width": 800,
-    "height": 350,
-    "data": {
-      "values": [
-        {"ethnic_group": "Malay"},
-        {"ethnic_group": "Malay"},
-        {"ethnic_group": "Malay"},
-        {"ethnic_group": "Malay"},
-        {"ethnic_group": "Malay"},
-        {"ethnic_group": "Malay"},
-        {"ethnic_group": "Chinese"},
-        {"ethnic_group": "Chinese"},
-        {"ethnic_group": "Chinese"},
-        {"ethnic_group": "Chinese"},
-        {"ethnic_group": "Chinese"},
-        {"ethnic_group": "Chinese"},
-        {"ethnic_group": "Chinese"},
-        {"ethnic_group": "Indians"},
-        {"ethnic_group": "Indians"},
-        {"ethnic_group": "Indians"},
-        {"ethnic_group": "Indians"},
-        {"ethnic_group": "Indians"},
-        {"ethnic_group": "Indians"},
-        {"ethnic_group": "Indians"},
-        {"ethnic_group": "Indians"},
-        {"ethnic_group": "Other Bumiputera"},
-        {"ethnic_group": "Other Bumiputera"},
-        {"ethnic_group": "Other Bumiputera"},
-        {"ethnic_group": "Other Bumiputera"},
-        {"ethnic_group": "Other Bumiputera"},
-        {"ethnic_group": "Other Bumiputera"},
-        {"ethnic_group": "Others"},
-        {"ethnic_group": "Others"},
-        {"ethnic_group": "Others"},
-        {"ethnic_group": "Others"},
-        {"ethnic_group": "Others"},
-        {"ethnic_group": "Others"},
-        {"ethnic_group": "Others"},
-        {"ethnic_group": "Others"},
-        {"ethnic_group": "Others"}
-      ]
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {"view": {"stroke": ""}},
+  "width": 800,
+  "height": 350,
+  "data": {
+    "values": [
+      {"ethnic_group": "Malay", "gender": "man", "col": 1},
+      {"ethnic_group": "Malay", "gender": "man", "col": 2},
+      {"ethnic_group": "Malay", "gender": "man", "col": 3},
+      {"ethnic_group": "Malay", "gender": "woman", "col": 4},
+      {"ethnic_group": "Malay", "gender": "woman", "col": 5},
+      {"ethnic_group": "Malay", "gender": "woman", "col": 6},
+      {"ethnic_group": "Chinese", "gender": "man", "col": 1},
+      {"ethnic_group": "Chinese", "gender": "man", "col": 2},
+      {"ethnic_group": "Chinese", "gender": "man", "col": 3},
+      {"ethnic_group": "Chinese", "gender": "man", "col": 4},
+      {"ethnic_group": "Chinese", "gender": "man", "col": 5},
+      {"ethnic_group": "Chinese", "gender": "woman", "col": 6},
+      {"ethnic_group": "Chinese", "gender": "woman", "col": 7},
+      {"ethnic_group": "Chinese", "gender": "woman", "col": 8},
+      {"ethnic_group": "Indians", "gender": "man", "col": 1},
+      {"ethnic_group": "Indians", "gender": "man", "col": 2},
+      {"ethnic_group": "Indians", "gender": "man", "col": 3},
+      {"ethnic_group": "Indians", "gender": "man", "col": 4},
+      {"ethnic_group": "Indians", "gender": "man", "col": 5},
+      {"ethnic_group": "Indians", "gender": "woman", "col": 6},
+      {"ethnic_group": "Indians", "gender": "woman", "col": 7},
+      {"ethnic_group": "Indians", "gender": "woman", "col": 8},
+      {"ethnic_group": "Indians", "gender": "woman", "col": 9},
+      {"ethnic_group": "Other Bumiputera", "gender": "man", "col": 1},
+      {"ethnic_group": "Other Bumiputera", "gender": "man", "col": 2},
+      {"ethnic_group": "Other Bumiputera", "gender": "man", "col": 3},
+      {"ethnic_group": "Other Bumiputera", "gender": "woman", "col": 4},
+      {"ethnic_group": "Other Bumiputera", "gender": "woman", "col": 5},
+      {"ethnic_group": "Other Bumiputera", "gender": "woman", "col": 6}
+    ]
+  },
+  "transform": [
+    {
+      "calculate": "({'Malay_man': 'https://raw.githubusercontent.com/ChaiKeRou/3179/refs/heads/main/image/malay_man.png', 'Malay_woman': 'https://raw.githubusercontent.com/ChaiKeRou/3179/refs/heads/main/image/malay_woman.png', 'Chinese_man': 'https://raw.githubusercontent.com/ChaiKeRou/3179/refs/heads/main/image/chinese_man.png', 'Chinese_woman': 'https://raw.githubusercontent.com/ChaiKeRou/3179/refs/heads/main/image/chinese_woman.png', 'Indians_man': 'https://raw.githubusercontent.com/ChaiKeRou/3179/refs/heads/main/image/indians_man.png', 'Indians_woman': 'https://raw.githubusercontent.com/ChaiKeRou/3179/refs/heads/main/image/indians_woman.png', 'Other Bumiputera_man': 'https://raw.githubusercontent.com/ChaiKeRou/3179/refs/heads/main/image/bumiputera_man.png', 'Other Bumiputera_woman': 'https://raw.githubusercontent.com/ChaiKeRou/3179/refs/heads/main/image/bumiputera_woman.png'})[datum.ethnic_group + '_' + datum.gender]",
+      "as": "image_url"
     },
-    "transform": [
-      {
-        "calculate": "{'Malay': '🐄', 'Chinese': '🐖', 'Indians': '🐏', 'Other Bumiputera': '❤️', 'Others': '❤️'}[datum.ethnic_group]",
-        "as": "emoji"
-      },
-      {"window": [{"op": "rank", "as": "rank"}], "groupby": ["ethnic_group"]}
-    ],
-    "mark": {"type": "text", "baseline": "middle"},
-    "encoding": {
-      "x": {"field": "rank", "type": "ordinal"},
-      "y": {"field": "ethnic_group", "type": "nominal", "sort": null, "title": "Ethnic Group"},
-      
-      "text": {"field": "emoji", "type": "nominal"},
-      "size": {"value": 65}
-    }
+    {"window": [{"op": "rank", "as": "rank"}], "groupby": ["ethnic_group","gender"]}
+  ],
+  "mark": {"type": "image", "baseline": "middle"},
+  "encoding": {
+    "x": {"field": "col", "type": "ordinal", "axis": null},
+    "y": {"field": "ethnic_group", "type": "nominal", "sort": null, "title": "Ethnic Group"},
+    "url": {"field": "image_url"},
+    "size": {"value": 65}
   }
-  
+}
