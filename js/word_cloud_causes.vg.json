@@ -1,0 +1,67 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "A word cloud visualization of principal causes of death.",
+  "width": 800,
+  "height": 400,
+  "padding": 0,
+  
+  "data": [
+    {
+      "name": "table",
+      "url": "https://raw.githubusercontent.com/ChaiKeRou/3179/main/data/wordcloud_principal_causes.csv",
+      "format": {"type": "csv"},
+      "transform": [
+        {
+          "type": "formula", "as": "angle",
+          "expr": "[-90, 0, 90][~~(random() * 3)]"
+        },
+        {
+          "type": "formula", "as": "weight",
+          "expr": "if(datum['Principal causes of death']=='Principal Causes of Death (2022)', 600, 300)"
+        }
+      ]
+    }
+  ],
+
+  "scales": [
+    {
+      "name": "color",
+      "type": "ordinal",
+      "domain": {"data": "table", "field": "Principal causes of death"},
+      "range": ["#d5a928", "#652c90", "#939597", "#00a651", "#f25f27"]
+    }
+  ],
+
+  "marks": [
+    {
+      "type": "text",
+      "from": {"data": "table"},
+      "encode": {
+        "enter": {
+          "text": {"field": "Principal causes of death"},
+          "align": {"value": "center"},
+          "baseline": {"value": "alphabetic"},
+          "fill": {"scale": "color", "field": "Principal causes of death"}
+        },
+        "update": {
+          "fillOpacity": {"value": 1}
+        },
+        "hover": {
+          "fillOpacity": {"value": 0.5}
+        }
+      },
+      "transform": [
+        {
+          "type": "wordcloud",
+          "size": [800, 400],
+          "text": {"field": "Principal causes of death"},
+          "rotate": {"field": "datum.angle"},
+          "font": "Helvetica Neue, Arial",
+          "fontSize": {"field": "datum.Deaths"},
+          "fontSizeRange": [12, 40],
+          "padding": 2
+        }
+      ]
+    }
+  ]
+}
