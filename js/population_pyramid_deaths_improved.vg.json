@@ -13,44 +13,15 @@
       "as": "Deaths_adjusted"
     }
   ],
-  "params": [
+  "params":[
     {
-      "name": "sex_highlight",
-      "select": {
-        "type": "point",
-        "fields": [
-          "gender"
-        ]
-      },
-      "bind": "legend"
+    "name": "sex_highlight",
+    "select": {"type": "point", "fields": ["gender"]},
+    "bind": "legend"
     }
   ],
   "spacing": 0,
   "hconcat": [
-    {
-      "mark": {
-        "type": "text",
-        "baseline": "middle",
-        "dx": 10,
-        "fontSize": 11.5,
-        "fontStyle": "italic"
-      },
-      "encoding": {
-        "text": {
-          "field": "Deaths",
-          "type": "quantitative"
-        },
-        "color": {
-          "value": "black"
-        },
-        "opacity": {
-          "condition": {
-            "test": "datum['Age group'] == '>= 85' && datum['gender'] == 'Female'","value": 1
-          },
-          "value": 0
-        }
-      }
-    },
     {
       "transform": [
         {
@@ -63,24 +34,24 @@
         "y": {
           "field": "Age group",
           "sort": [
-            "0-4",
-            "5-9",
-            "10-14",
-            "15-19",
-            "20-24",
-            "25-29",
-            "30-34",
-            "35-39",
-            "40-44",
-            "45-49",
-            "50-54",
-            "55-59",
-            "60-64",
-            "65-69",
-            "70-74",
-            "75-79",
+            ">= 85",
             "80-84",
-            ">= 85"
+            "75-79",
+            "70-74",
+            "65-69",
+            "60-64",
+            "55-59",
+            "50-54",
+            "45-49",
+            "40-44",
+            "35-39",
+            "30-34",
+            "25-29",
+            "20-24",
+            "15-19",
+            "10-14",
+            "5-9",
+            "0-4"
           ],
           "axis": null
         },
@@ -107,10 +78,7 @@
           }
         },
         "opacity": {
-          "condition": {
-            "param": "sex_highlight",
-            "value": 0.6
-          },
+          "condition": {"param": "sex_highlight", "value": 1},
           "value": 0.2
         },
         "tooltip": [
@@ -122,6 +90,12 @@
           {
             "field": "Deaths",
             "title": "Deaths of Female",
+            "type": "quantitative",
+            "format": ","
+          },
+          {
+            "field": "total_deaths",
+            "title": "Total Deaths",
             "type": "quantitative",
             "format": ","
           }
@@ -141,24 +115,24 @@
         "y": {
           "field": "Age group",
           "sort": [
-            "0-4",
-            "5-9",
-            "10-14",
-            "15-19",
-            "20-24",
-            "25-29",
-            "30-34",
-            "35-39",
-            "40-44",
-            "45-49",
-            "50-54",
-            "55-59",
-            "60-64",
-            "65-69",
-            "70-74",
-            "75-79",
+            ">= 85",
             "80-84",
-            ">= 85"
+            "75-79",
+            "70-74",
+            "65-69",
+            "60-64",
+            "55-59",
+            "50-54",
+            "45-49",
+            "40-44",
+            "35-39",
+            "30-34",
+            "25-29",
+            "20-24",
+            "15-19",
+            "10-14",
+            "5-9",
+            "0-4"
           ],
           "axis": null
         },
@@ -179,24 +153,24 @@
         "y": {
           "field": "Age group",
           "sort": [
-            "0-4",
-            "5-9",
-            "10-14",
-            "15-19",
-            "20-24",
-            "25-29",
-            "30-34",
-            "35-39",
-            "40-44",
-            "45-49",
-            "50-54",
-            "55-59",
-            "60-64",
-            "65-69",
-            "70-74",
-            "75-79",
+            ">= 85",
             "80-84",
-            ">= 85"
+            "75-79",
+            "70-74",
+            "65-69",
+            "60-64",
+            "55-59",
+            "50-54",
+            "45-49",
+            "40-44",
+            "35-39",
+            "30-34",
+            "25-29",
+            "20-24",
+            "15-19",
+            "10-14",
+            "5-9",
+            "0-4"
           ],
           "axis": null
         },
@@ -220,10 +194,7 @@
           "legend": null
         },
         "opacity": {
-          "condition": {
-            "param": "sex_highlight",
-            "value": 0.6
-          },
+          "condition": {"param": "sex_highlight", "value": 1},
           "value": 0.2
         },
         "tooltip": [
@@ -235,6 +206,12 @@
           {
             "field": "Deaths",
             "title": "Deaths of Male",
+            "type": "quantitative",
+            "format": ","
+          },
+          {
+            "field": "total_deaths",
+            "title": "Total Deaths",
             "type": "quantitative",
             "format": ","
           }
