@@ -1,8 +1,8 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "config": {"view": {"stroke": ""}},
-    "width": 500,
-    "height": 200,
+    "width": "container",
+    "height": 380, 
     "data": {
       "values": [
         {"ethnic_group": "Malay", "count": 108627},

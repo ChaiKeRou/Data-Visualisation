@@ -5,7 +5,7 @@
             "stroke": ""
         }
     },
-    "width": 800,
+    "width": "container",
     "height": 400,
     "data": {
         "url": "https://raw.githubusercontent.com/ChaiKeRou/3179/main/data/deaths_2000_2022.csv"
@@ -22,6 +22,7 @@
             "bind": "legend"
         }
     ],
+    
     "mark": {
         "type": "line",
         "point": true
