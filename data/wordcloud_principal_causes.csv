@@ -1,22 +1,22 @@
-Causes,Deaths,Category
-Principal Causes of Death (2022),116141,
-Ischaemic heart diseases,20322,Medically Certified
-Pneumonia,16770,Medically Certified
-Cerebrovascular diseases,9149,Medically Certified
-COVID-19 infection (due to),5314,Medically Certified
-Transport accidents,4012,Medically Certified
-"Malignant neoplasm of trachea, bronchus and lung",2644,Medically Certified
-Chronic lower respiratory diseases,2324,Medically Certified
-Hypertensive diseases,2123,Medically Certified
-Diabetes mellitus,2085,Medically Certified
-Malignant neoplasm of breast,1922,Medically Certified
-Old age 65 years and over,35679,Non-Medically Certified
-Hypertension,3911,Non-Medically Certified
-Diabetes mellitus,2619,Non-Medically Certified
-Cerebrovascular diseases,2109,Non-Medically Certified
-Ischaemic heart diseases,1024,Non-Medically Certified
-"Colon, rectum and anus cancer",928,Non-Medically Certified
-"Trachea, bronchus and lung cancer",917,Non-Medically Certified
-Asthma,909,Non-Medically Certified
-Liver cancer,695,Non-Medically Certified
-Breast cancer,685,Non-Medically Certified
+Causes,Deaths,Category,Count
+Principal Causes of Death (2022),116141,,5.064985561
+Old age 65 years and over,35679,Non-Medically Certified,4.552412674
+Ischaemic heart diseases,20322,Medically Certified,4.307966447
+Pneumonia,16770,Medically Certified,4.224533063
+Cerebrovascular diseases,9149,Medically Certified,3.961373628
+COVID-19 infection (due to),5314,Medically Certified,3.72542155
+Transport accidents,4012,Medically Certified,3.603360924
+Hypertension,3911,Non-Medically Certified,3.592287816
+"Malignant neoplasm of trachea, bronchus and lung",2644,Medically Certified,3.422261451
+Diabetes mellitus,2619,Non-Medically Certified,3.418135498
+Chronic lower respiratory diseases,2324,Medically Certified,3.366236124
+Hypertensive diseases,2123,Medically Certified,3.326949994
+Cerebrovascular diseases,2109,Non-Medically Certified,3.32407658
+Diabetes mellitus,2085,Medically Certified,3.319106059
+Malignant neoplasm of breast,1922,Medically Certified,3.283753383
+Ischaemic heart diseases,1024,Non-Medically Certified,3.010299957
+"Colon, rectum and anus cancer",928,Non-Medically Certified,2.967547976
+"Trachea, bronchus and lung cancer",917,Non-Medically Certified,2.962369336
+Asthma,909,Non-Medically Certified,2.958563883
+Liver cancer,695,Non-Medically Certified,2.841984805
+Breast cancer,685,Non-Medically Certified,2.835690571
