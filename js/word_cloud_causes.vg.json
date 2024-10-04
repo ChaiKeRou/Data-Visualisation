@@ -1,10 +1,9 @@
 {
   "$schema": "https://vega.github.io/schema/vega/v5.json",
-  "description": "A word cloud visualization of principal causes of death.",
   "width": 800,
   "height": 400,
   "padding": 0,
-  
+
   "data": [
     {
       "name": "table",
@@ -13,11 +12,15 @@
       "transform": [
         {
           "type": "formula", "as": "angle",
-          "expr": "[-90, 0, 90][~~(random() * 3)]"
+          "expr": "[-45, 0, 45][~~(random() * 3)]"
         },
         {
           "type": "formula", "as": "weight",
-          "expr": "if(datum['Principal causes of death']=='Principal Causes of Death (2022)', 600, 300)"
+          "expr": "if(datum.Causes=='Principal Causes of Death (2022)', 600, 300)"
+        },
+        {
+          "type": "formula", "as": "Deaths",
+          "expr": "sqrt(datum.Deaths) * 5"  
         }
       ]
     }
@@ -27,8 +30,8 @@
     {
       "name": "color",
       "type": "ordinal",
-      "domain": {"data": "table", "field": "Principal causes of death"},
-      "range": ["#d5a928", "#652c90", "#939597", "#00a651", "#f25f27"]
+      "domain": {"data": "table", "field": "Causes"},
+      "range": ["#d5a928", "#652c90", "#939597"]
     }
   ],
 
@@ -38,10 +41,10 @@
       "from": {"data": "table"},
       "encode": {
         "enter": {
-          "text": {"field": "Principal causes of death"},
+          "text": {"field": "Causes"},
           "align": {"value": "center"},
           "baseline": {"value": "alphabetic"},
-          "fill": {"scale": "color", "field": "Principal causes of death"}
+          "fill": {"scale": "color", "field": "Causes"}
         },
         "update": {
           "fillOpacity": {"value": 1}
@@ -54,11 +57,12 @@
         {
           "type": "wordcloud",
           "size": [800, 400],
-          "text": {"field": "Principal causes of death"},
+          "text": {"field": "Causes"},
           "rotate": {"field": "datum.angle"},
           "font": "Helvetica Neue, Arial",
           "fontSize": {"field": "datum.Deaths"},
-          "fontSizeRange": [12, 40],
+          "fontWeight": {"field": "datum.weight"},
+          "fontSizeRange": [12, 5],
           "padding": 2
         }
       ]
