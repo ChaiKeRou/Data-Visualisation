@@ -1,24 +1,24 @@
 Causes of death,Year,Deaths,Category,Rank
-Diarrhoea and gastroenteritis of presumed infectious origin      ,2000,49,medically certified,19
-Septicaemia ,2000,2741,medically certified,7
-"Malignant neoplasm of trachea, bronchus and lung ",2000,833,medically certified,12
-Diabetes mellitus ,2000,515,medically certified,13
+Old age 65 years and over,2000,26559,non-medically certified,1
+"Symptoms, signs and abnormal findings",2000,10248,non-medically certified,2
 Ischaemic heart diseases ,2000,4546,medically certified,3
+Asthma,2000,3593,non-medically certified,4
 Cerebrovascular diseases,2000,3237,medically certified,5
+Transport accidents ,2000,2908,medically certified,6
+Septicaemia ,2000,2741,medically certified,7
+Fever,2000,2101,non-medically certified,8
 Pneumonia ,2000,1822,medically certified,9
 Chronic lower respiratory diseases ,2000,1270,medically certified,10
-Transport accidents ,2000,2908,medically certified,6
-COVID-19 infection (due to),2000,0,medically certified,20
-AIDS/ HIV,2000,309,non-medically certified,16
-Asthma,2000,3593,non-medically certified,4
+Hypertension,2000,1214,non-medically certified,11
+"Malignant neoplasm of trachea, bronchus and lung ",2000,833,medically certified,12
+Diabetes mellitus ,2000,515,medically certified,13
+"Trachea, bronchus and lung cancer",2000,391,non-medically certified,14
 Liver cancer,2000,353,non-medically certified,15
+AIDS/ HIV,2000,309,non-medically certified,16
 "Colon, rectum and anus cancer",2000,262,non-medically certified,17
 Breast cancer,2000,251,non-medically certified,18
-"Trachea, bronchus and lung cancer",2000,391,non-medically certified,14
-Hypertension,2000,1214,non-medically certified,11
-Fever,2000,2101,non-medically certified,8
-"Symptoms, signs and abnormal findings",2000,10248,non-medically certified,2
-Old age 65 years and over,2000,26559,non-medically certified,1
+Diarrhoea and gastroenteritis of presumed infectious origin      ,2000,49,medically certified,19
+COVID-19 infection (due to),2000,0,medically certified,20
 Diarrhoea and gastroenteritis of presumed infectious origin      ,2001,75,medically certified,19
 Septicaemia ,2001,3171,medically certified,6
 "Malignant neoplasm of trachea, bronchus and lung ",2001,1012,medically certified,12
