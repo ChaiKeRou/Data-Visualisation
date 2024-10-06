@@ -1,0 +1,66 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {"url": "https://raw.githubusercontent.com/ChaiKeRou/3179/main/data/death_category_state.csv"},
+    "width": 800,
+    "encoding": {
+      "x": {
+        "field": "deaths",
+        "type": "quantitative",
+        "title": "Deaths"
+      },
+      "y": {
+        "field": "state",
+        "type": "nominal",
+        "title": "State",
+        "axis": {
+          "offset": 5,
+          "ticks": false,
+          "minExtent": 70,
+          "domain": false
+        }
+      }
+    },
+    "layer": [
+      {
+        "mark": "line",
+        "encoding": {
+          "detail": {
+            "field": "state",
+            "type": "nominal"
+          },
+          "color": {"value": "#db646f"}
+        }
+      },
+      {
+        "mark": {
+          "type": "point",
+          "filled": true
+        },
+        "encoding": {
+          "color": {
+            "field": "category",
+            "type": "nominal",
+            "scale": {
+              "domain": ["Medically certified","Non-medically certified"],
+              "range": ["#e6959c", "#911a24"]
+            },
+            "title": "Year"
+          },
+          "size": {"value": 100},
+          "opacity": {"value": 1},
+          "tooltip":[{
+                      "field": "category",
+                      "title": "Category: ",
+                      "type": "nominal"
+                  },
+                  {
+                      "field": "deaths",
+                      "title": "Death Cases: ",
+                      "type": "quantitative",
+                      "format": ","
+                  }]
+        }
+      }
+    ]
+  }
+  
