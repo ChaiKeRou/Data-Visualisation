@@ -1,0 +1,33 @@
+state,category,deaths
+Johor,Medically certified,16673
+Kedah,Medically certified,10965
+Kelantan,Medically certified,8496
+Melaka,Medically certified,3844
+Negeri Sembilan,Medically certified,6015
+Pahang,Medically certified,6960
+Perak,Medically certified,12391
+Perlis,Medically certified,1595
+Pulau Pinang,Medically certified,7761
+Sabah,Medically certified,8303
+Sarawak,Medically certified,7756
+Selangor,Medically certified,21890
+Terengganu,Medically certified,6282
+W.P. Kuala Lumpur,Medically certified,6823
+W.P. Labuan,Medically certified,284
+W.P. Putrajaya,Medically certified,230
+Johor,Non-medically certified,8632
+Kedah,Non-medically certified,6663
+Kelantan,Non-medically certified,4949
+Melaka,Non-medically certified,2786
+Negeri Sembilan,Non-medically certified,2621
+Pahang,Non-medically certified,4062
+Perak,Non-medically certified,9950
+Perlis,Non-medically certified,827
+Pulau Pinang,Non-medically certified,5159
+Sabah,Non-medically certified,9092
+Sarawak,Non-medically certified,8871
+Selangor,Non-medically certified,10971
+Terengganu,Non-medically certified,2404
+W.P. Kuala Lumpur,Non-medically certified,3139
+W.P. Labuan,Non-medically certified,108
+W.P. Putrajaya,Non-medically certified,23
