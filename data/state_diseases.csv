@@ -1,0 +1,65 @@
+state,male,female,cause_death
+Johor,60.18 ,83.37 ,Cancer
+Kedah,74.83 ,61.04 ,Cancer
+Kelantan,57.98 ,78.12 ,Cancer
+Melaka,55.45 ,66.45 ,Cancer
+Negeri Sembilan,85.04 ,92.70 ,Cancer
+Pahang,52.48 ,61.18 ,Cancer
+Perak,73.01 ,62.78 ,Cancer
+Perlis,63.84 ,66.19 ,Cancer
+Pulau Pinang,58.69 ,59.93 ,Cancer
+Sabah,56.29 ,64.30 ,Cancer
+Sarawak,72.44 ,66.42 ,Cancer
+Selangor,52.56 ,62.30 ,Cancer
+Terengganu,73.08 ,87.89 ,Cancer
+W.P. Kuala Lumpur,55.54 ,64.99 ,Cancer
+W.P. Labuan,35.58 ,81.66 ,Cancer
+W.P. Putrajaya,54.15 ,48.62 ,Cancer
+Johor,222.07 ,95.88 ,Cardiovascular diseases
+Kedah,285.39 ,129.42 ,Cardiovascular diseases
+Kelantan,310.18 ,147.11 ,Cardiovascular diseases
+Melaka,195.09 ,93.49 ,Cardiovascular diseases
+Negeri Sembilan,257.16 ,107.05 ,Cardiovascular diseases
+Pahang,203.93 ,101.37 ,Cardiovascular diseases
+Perak,254.28 ,91.69 ,Cardiovascular diseases
+Perlis,312.67 ,133.92 ,Cardiovascular diseases
+Pulau Pinang,229.16 ,79.23 ,Cardiovascular diseases
+Sabah,118.85 ,53.13 ,Cardiovascular diseases
+Sarawak,121.61 ,59.33 ,Cardiovascular diseases
+Selangor,151.86 ,56.86 ,Cardiovascular diseases
+Terengganu,319.06 ,167.44 ,Cardiovascular diseases
+W.P. Kuala Lumpur,141.43 ,60.45 ,Cardiovascular diseases
+W.P. Labuan,195.70 ,96.08 ,Cardiovascular diseases
+W.P. Putrajaya,104.43 ,48.62 ,Cardiovascular diseases
+Johor,6.92 ,7.35 ,Diabetes
+Kedah,12.62 ,12.94 ,Diabetes
+Kelantan,18.26 ,17.96 ,Diabetes
+Melaka,4.11 ,2.29 ,Diabetes
+Negeri Sembilan,13.37 ,14.71 ,Diabetes
+Pahang,10.44 ,6.50 ,Diabetes
+Perak,5.68 ,7.98 ,Diabetes
+Perlis,11.46 ,7.70 ,Diabetes
+Pulau Pinang,7.17 ,7.95 ,Diabetes
+Sabah,4.60 ,3.32 ,Diabetes
+Sarawak,3.09 ,2.94 ,Diabetes
+Selangor,5.23 ,3.97 ,Diabetes
+Terengganu,30.75 ,29.16 ,Diabetes
+W.P. Kuala Lumpur,3.94 ,4.15 ,Diabetes
+W.P. Labuan,0.00 ,0.00 ,Diabetes
+W.P. Putrajaya,0.00 ,0.00 ,Diabetes
+Johor,26.17 ,14.70 ,Chronic respiratory diseases
+Kedah,33.87 ,11.65 ,Chronic respiratory diseases
+Kelantan,23.48 ,13.40 ,Chronic respiratory diseases
+Melaka,23.00 ,11.00 ,Chronic respiratory diseases
+Negeri Sembilan,32.92 ,7.36 ,Chronic respiratory diseases
+Pahang,26.90 ,15.37 ,Chronic respiratory diseases
+Perak,29.91 ,14.90 ,Chronic respiratory diseases
+Perlis,34.38 ,9.24 ,Chronic respiratory diseases
+Pulau Pinang,29.57 ,13.39 ,Chronic respiratory diseases
+Sabah,20.48 ,9.96 ,Chronic respiratory diseases
+Sarawak,21.00 ,9.17 ,Chronic respiratory diseases
+Selangor,13.50 ,5.51 ,Chronic respiratory diseases
+Terengganu,41.93 ,16.24 ,Chronic respiratory diseases
+W.P. Kuala Lumpur,10.63 ,4.74 ,Chronic respiratory diseases
+W.P. Labuan,13.34 ,9.61 ,Chronic respiratory diseases
+W.P. Putrajaya,7.74 ,6.95 ,Chronic respiratory diseases
