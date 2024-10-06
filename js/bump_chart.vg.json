@@ -1,0 +1,173 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "config": {
+      "view": {
+        "stroke": ""
+      }
+    },
+    "width": 800,
+    "height": 700,
+    "data": {
+      "url": "https://raw.githubusercontent.com/ChaiKeRou/3179/main/data/deaths_2000_2022.csv"
+    },
+    "transform": [
+      {
+        "filter": "datum.Year >= 2013 && datum.Year <= 2022"
+      },
+      {
+        "window": [{"op": "rank", "as": "sortOrder"}],
+        "groupby": ["Causes of death"],
+        "frame": [null, null],
+        "sort": [{"field": "order", "order": "ascending"}]
+      }
+    ],
+    "hconcat": [
+      {
+        "width": 5,
+        "height": 600,
+        "view": {
+          "stroke": null
+        },
+        "mark": {
+          "type": "text",
+          "align": "right"
+        },
+        "encoding": {
+          "y": {
+            "field": "Causes of death",
+            "type": "nominal",
+            "sort": {
+              "field": "sortOrder",
+              "order": "ascending"
+            },
+            "axis": null
+          },
+          "text": {
+            "field": "Causes of death",
+            "type": "nominal"
+          }
+        }
+      },
+      {
+        "layer": [
+          { 
+            "width": 600,
+            "height": 600,
+            "mark": {
+              "type": "line",
+              "point": {
+                "size": 500
+              }
+            },
+            
+            "selection": {
+              "CauseSelection": {
+                "type": "multi",
+                "fields": [
+                  "Causes of death"
+                ],
+                "on": "click"
+              }
+            },
+            "encoding": {
+              "x": {
+                "field": "Year",
+                "type": "ordinal",
+                "axis": {
+                "labelAngle": 0, 
+                "labelPadding": 8
+                }
+              },
+              "y": {
+                "field": "Rank",
+                "type": "ordinal",
+                "title": "Rank",
+                "sort": [
+                  "1", "2", "3", "4", "5", "6", "7", "8", "9", "10",
+                  "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"
+                ],
+                "axis": null
+              },
+              "order": {
+                "field": "Year",
+                "type": "ordinal"
+              },
+              "color": {
+                "field": "Causes of death",
+                "type": "nominal",
+                "scale": {
+                  "range": [
+                    "#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b", "#e377c2", "#7f7f7f", "#bcbd22", "#17becf",
+                    "#aec7e8", "#ffbb78", "#98df8a", "#ff9896", "#c5b0d5", "#c49c94", "#f7b6d2", "#c7c7c7", "#dbdb8d", "#9edae5"
+                  ]
+                },
+                "legend": null
+              },
+              "opacity": {
+                "condition": {
+                  "selection": "CauseSelection",
+                  "value": 1
+                },
+                "value": 0.2
+              },
+              "tooltip": [
+                {
+                  "field": "Causes of death",
+                  "title": "Causes of death",
+                  "type": "nominal"
+                },
+                {
+                  "field": "Category",
+                  "title": "Category",
+                  "type": "nominal"
+                },
+                {
+                  "field": "Year",
+                  "title": "Year",
+                  "type": "quantitative"
+                },
+                {
+                  "field": "Deaths",
+                  "title": "Deaths",
+                  "type": "quantitative",
+                  "format": ","
+                }
+              ]
+            }
+          },
+          {
+            "mark": {
+              "type": "text",
+              "align": "center",
+              "baseline": "middle",
+              "dx": 0,
+              "dy": 0
+            },
+            "encoding": {
+              "text": {
+                "field": "Rank",
+                "type": "ordinal"
+              },
+              "x": {
+                "field": "Year",
+                "type": "ordinal"
+                
+              },
+              "y": {
+                "field": "Rank",
+                "type": "ordinal",
+                "sort": [
+                  "1", "2", "3", "4", "5", "6", "7", "8", "9", "10",
+                  "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"
+                ]
+              },
+              "color": {
+                "value": "black"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+  
