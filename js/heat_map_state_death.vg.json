@@ -1,0 +1,37 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {"url": "https://raw.githubusercontent.com/ChaiKeRou/3179/main/data/death_rate_state.csv"},
+    "height":200,
+    "width":500,
+    "encoding": {
+      "y": {"field": "age_range", "type": "ordinal"},
+      "x": {"field": "state", "type": "nominal"}
+    },
+    "layer": [
+      {
+        "mark": "rect",
+        "encoding": {
+          "color": {
+            "field": "death_rate",
+            "type": "quantitative",
+            "title": "Death Rate",
+            "legend": {"direction": "horizontal", "gradientLength": 120}
+          }
+        }
+      },
+      {
+        "mark": "text",
+        "encoding": {
+          "text": {"field": "death_rate", "type": "quantitative"},
+          "color": {
+            "condition": {"test": "datum['death_rate'] < 40", "value": "black"},
+            "value": "white"
+          }
+        }
+      }
+    ],
+    "config": {
+      "axis": {"grid": true, "tickBand": "extent"}
+    }
+  }
+  
