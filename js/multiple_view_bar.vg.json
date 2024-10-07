@@ -1,0 +1,20 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {"url": "https://raw.githubusercontent.com/ChaiKeRou/3179/main/data/state_diseases.csv"},
+    "facet": {
+      "field": "cause_death",
+      "type": "nominal"
+    },
+    "spec": {
+      "mark": "bar",
+      "encoding": {
+        "x": {"field": "state", "type": "nominal"},
+        "y": {"field": "death_rate", "type": "quantitative"},
+        "color": {"field": "gender", "type": "nominal"}
+      }
+    },
+    "config": {"facet": {"columns": 2}},
+    "resolve": {"axis": {"x": "independent"}}
+  
+  }
+  
