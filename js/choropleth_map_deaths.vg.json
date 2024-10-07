@@ -6,13 +6,14 @@
     "fontWeight": "bold",
     "font": "Arial"
   },
-  "width": 800,
+  "width": "container",
   "height": 500,
   "projection": {
     "type": "mercator",
     "center": [110, 1],  
     "scale": 1800        
   },
+  "background": null,
   "layer": [
     {
       "data": {

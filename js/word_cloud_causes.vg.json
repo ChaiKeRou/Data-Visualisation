@@ -1,12 +1,13 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 800,
-  "height": 800,
+  "width": "container",
+  "height": 500,
+  "background":null,
   "data": {
     "values": [
-      {"word": "Principal Causes of", "count": 30000, "x": 200, "y": 205, "angle": 0, "Causes of Death": "Principal Causes of Death (2022)", "Death Cases": 206525},
-      {"word": "Death (2022)", "count": 30000, "x": 200, "y": 172, "angle": 0, "Causes of Death": "Principal Causes of Death (2022)", "Death Cases": 206525},
-      {"word": "Ischaemic heart diseases", "count": 20322, "x": 200, "y": 100, "angle": 0, "Causes of Death": "Ischaemic heart diseases", "Death Cases": 20322},
+      {"word": "Principal Causes of", "count": 50000, "x": 200, "y": 205, "angle": 0, "Causes of Death": "Principal Causes of Death (2022)", "Death Cases": 206525},
+      {"word": "Death (2022)", "count": 50000, "x": 200, "y": 170, "angle": 0, "Causes of Death": "Principal Causes of Death (2022)", "Death Cases": 206525},
+      {"word": "Ischaemic heart diseases", "count": 20322, "x": 160, "y": 98, "angle": 0, "Causes of Death": "Ischaemic heart diseases", "Death Cases": 20322},
       {"word": "Pneumonia", "count": 16770, "x": 343, "y": 200, "angle": -90, "Causes of Death": "Pneumonia", "Death Cases": 16770},
       {"word": "All other diseases", "count": 13541, "x": 100, "y": 230, "angle": 0, "Causes of Death": "All other diseases", "Death Cases": 13541},
       {"word": "Cerebrovascular diseases", "count": 9149, "x": 150, "y": 245, "angle": 0, "Causes of Death": "Cerebrovascular diseases", "Death Cases": 9149},
@@ -14,7 +15,7 @@
       {"word": "Other", "count": 5774, "x": 80, "y": 160, "angle": 0, "Causes of Death": "Other heart diseases", "Death Cases": 5774},
       {"word": "heart diseases", "count": 5774, "x": 100, "y": 150, "angle": 0, "Causes of Death": "Other heart diseases", "Death Cases": 5774},
       {"word": "COVID-19 infection", "count": 5314, "x": 328, "y": 152, "angle": -90, "Causes of Death": "COVID-19 infection", "Death Cases": 5314},
-      {"word": "Septicaemia", "count": 5006, "x": 195, "y": 230, "angle": 0, "Causes of Death": "Septicaemia", "Death Cases": 5006},
+      {"word": "Septicaemia", "count": 5006, "x": 200, "y": 230, "angle": 0, "Causes of Death": "Septicaemia", "Death Cases": 5006},
       {"word": "Remainder of diseases", "count": 4131, "x": 230, "y": 270, "angle": -90, "Causes of Death": "Remainder of diseases of the respiratory system", "Death Cases": 4131},
       {"word": "of the respiratory system", "count": 4131, "x": 240, "y": 285, "angle": -90, "Causes of Death": "Remainder of diseases of the respiratory system", "Death Cases": 4131},
       {"word": "Transport accidents", "count": 4012, "x": 70, "y": 105, "angle": 90, "Causes of Death": "Transport accidents", "Death Cases": 4012},
@@ -42,8 +43,8 @@
       {"word": "Malignant neoplasm of larynx", "count": 72, "x": 42, "y": 188, "angle": 90, "Causes of Death": "Malignant neoplasm of larynx", "Death Cases": 72},
       {"word": "Other arthropod-borne viral fevers", "count": 67, "x": 183, "y": 273, "angle": 0, "Causes of Death": "Other arthropod-borne viral fevers", "Death Cases": 67},
       {"word": "Other direct obstetric deaths", "count": 53, "x": 285, "y": 248, "angle": 0, "Causes of Death": "Other direct obstetric deaths", "Death Cases": 53},
-      {"word": "Other intestinal infectious diseases", "count": 51, "x": 321, "y": 283, "angle": -90, "Causes of Death": "Other intestinal infectious diseases", "Death Cases": 51},
-      {"word": "Malnutrition", "count": 51, "x": 270, "y": 268, "angle": 0, "Causes of Death": "Malnutrition", "Death Cases": 51},
+      {"word": "Other intestinal infectious diseases", "count": 51, "x": 321, "y": 295, "angle": -90, "Causes of Death": "Other intestinal infectious diseases", "Death Cases": 51},
+      {"word": "Malnutrition", "count": 51, "x": 270, "y": 265, "angle": 0, "Causes of Death": "Malnutrition", "Death Cases": 51},
       {"word": "Assault", "count": 51, "x": 194, "y": 118, "angle": -90, "Causes of Death": "Assault", "Death Cases": 51},
       {"word": "Indirect obstetric deaths", "count": 33, "x": 280, "y": 300, "angle": -90, "Causes of Death": "Indirect obstetric deaths", "Death Cases": 33},
       {"word": "Malignant melanoma of skin", "count": 32, "x": 290, "y": 295, "angle": -90, "Causes of Death": "Malignant melanoma of skin", "Death Cases": 32},
@@ -64,8 +65,8 @@
       {"word": "Whooping cough", "count": 1, "x": 307, "y": 161, "angle": -90, "Causes of Death": "Whooping cough", "Death Cases": 1},
       {"word": "Acute poliomyelitis", "count": 1, "x": 123, "y": 157, "angle": 0, "Causes of Death": "Acute poliomyelitis", "Death Cases": 1},
       {"word": "Mental and behavioural disorders due to psychoactive substance use", "count": 1, "x": 353, "y": 225, "angle": -90, "Causes of Death": "Mental and behavioural disorders due to psychoactive substance use", "Death Cases": 1},
-      {"word": "Old age", "count": 25679, "x": 268, "y": 122, "angle": 0, "Causes of Death": "Old age", "Death Cases": 35679},
-      {"word": "65 years and over", "count": 25679, "x": 270, "y": 80, "angle": 0, "Causes of Death": "65 years and over", "Death Cases": 25679},
+      {"word": "Old age", "count": 35679, "x": 268, "y": 122, "angle": 0, "Causes of Death": "Old age", "Death Cases": 35679},
+      {"word": "65 years and over", "count": 35679, "x": 270, "y": 80, "angle": 0, "Causes of Death": "65 years and over", "Death Cases": 25679},
       {"word": "Other diseases", "count": 2697, "x": 280, "y": 258, "angle": 0, "Causes of Death": "Other diseases", "Death Cases": 2697},
       {"word": "Other cancer", "count": 1652, "x": 312, "y": 272, "angle": -90, "Causes of Death": "Other cancer", "Death Cases": 1652},
       {"word": "Colon, rectum and anus cancer", "count": 928, "x": 122, "y": 83, "angle": 0, "Causes of Death": "Colon, rectum and anus cancer", "Death Cases": 928},
@@ -74,9 +75,9 @@
       {"word": "Breast cancer", "count": 685, "x": 320, "y": 165, "angle": -90, "Causes of Death": "Breast cancer", "Death Cases": 685},
       {"word": "Other diseases of the respiratory system", "count": 297, "x": 150, "y": 255, "angle": 0, "Causes of Death": "Other diseases of the respiratory system", "Death Cases": 297},
       {"word": "Pancreas cancer", "count": 219, "x": 363, "y": 136, "angle": 0, "Causes of Death": "Pancreas cancer", "Death Cases": 219},
-      {"word": "Liver disease", "count": 209, "x": 295, "y": 217, "angle": 0, "Causes of Death": "Liver disease", "Death Cases": 209},
+      {"word": "Liver disease", "count": 209, "x": 160, "y": 230, "angle": 0, "Causes of Death": "Liver disease", "Death Cases": 209},
       {"word": "Prostate cancer", "count": 196, "x": 240, "y": 154, "angle": 0, "Causes of Death": "Prostate cancer", "Death Cases": 196},
-      {"word": "Brain and other nervous system cancer", "count": 186, "x": 180, "y": 285, "angle": 0, "Causes of Death": "Brain and other nervous system cancer", "Death Cases": 186},
+      {"word": "Brain and other nervous system cancer", "count": 186, "x": 180, "y": 283, "angle": 0, "Causes of Death": "Brain and other nervous system cancer", "Death Cases": 186},
       {"word": "Tuberculosis", "count": 182, "x": 272, "y": 290, "angle": -90, "Causes of Death": "Tuberculosis", "Death Cases": 182},
       {"word": "Uterus cancer", "count": 166, "x": 305, "y": 185, "angle": 0, "Causes of Death": "Uterus cancer", "Death Cases": 166},
       {"word": "Pulmonary edema", "count": 145, "x": 183, "y": 155, "angle": 0, "Causes of Death": "Pulmonary edema", "Death Cases": 145},
@@ -92,7 +93,9 @@
   },
   "mark": {
     "type": "text",
-    "tooltip": true
+    "tooltip": true,
+    "fontWeight": "bold",
+    "font": "Lilita One"
   },
   "encoding": {
     "x": {
@@ -104,7 +107,7 @@
     "y": {
       "field": "y",
       "type": "quantitative",
-      "scale": {"domain": [0, 400]},
+      "scale": {"domain": [0, 350]},
       "axis": null
     },
     "text": {
@@ -113,7 +116,7 @@
     "size": {
       "field": "count",
       "type": "quantitative",
-      "scale": {"domain": [50, 30000], "range": [10, 60]},
+      "scale": {"domain": [50, 50000], "range": [12, 55]},
       "legend": null
     },
     "angle": {

@@ -3,6 +3,7 @@
   "data": {
     "url": "https://raw.githubusercontent.com/ChaiKeRou/3179/main/data/crude_death_age_gender.csv"
   },
+  "background": null,
   "transform": [
     {
       "calculate": "datum.Sex == 'Female' ? 'Female' : 'Male'",

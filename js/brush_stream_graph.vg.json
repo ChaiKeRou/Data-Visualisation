@@ -3,8 +3,9 @@
     "data": {
         "url": "https://raw.githubusercontent.com/ChaiKeRou/3179/main/data/deaths_category_2000_2022.csv"
       },
+    "background": null,
     "vconcat": [{
-      "width": 480,
+      "width": 850,
       "mark": "area",
       "encoding": {
         "x": {
@@ -39,7 +40,7 @@
             ]
       }
     }, {
-      "width": 480,
+      "width": 850,
       "height": 60,
       "mark": "area",
       "params": [{
