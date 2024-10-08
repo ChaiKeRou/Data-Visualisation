@@ -10,7 +10,7 @@
   "height": 500,
   "projection": {
     "type": "mercator",
-    "center": [110, 1],  
+    "center": [109, 1],  
     "scale": 1800        
   },
   "background": null,
@@ -104,15 +104,6 @@
           {"field": "properties.name", "type": "nominal", "title": "State"},
           {"field": "Deaths", "type": "quantitative", "title": "Crude Death Rate"}
         ]
-      }
-    },
-    {
-      "data": {"graticule": {"step": [5, 5]}},  
-      "mark": {
-        "type": "geoshape",
-        "stroke": "#888",
-        "strokeWidth": 0.5,
-        "strokeDash": [3, 3]  
       }
     }
   ],

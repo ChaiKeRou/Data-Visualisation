@@ -5,7 +5,7 @@
       },
     "background": null,
     "vconcat": [{
-      "width": 850,
+      "width": 770,
       "mark": "area",
       "encoding": {
         "x": {
@@ -18,7 +18,7 @@
     
           "stack": "center"
         },
-        "color": {"field":"Category", "scale":{"scheme": "category20b"}},
+        "color": {"field":"Category", "scale":{"range": ["#996e1f", "#f4c251"]}, "legend": null},
         "tooltip": [
                 {
                     "field": "Category",
@@ -40,7 +40,7 @@
             ]
       }
     }, {
-      "width": 850,
+      "width": 770,
       "height": 60,
       "mark": "area",
       "params": [{
@@ -57,7 +57,7 @@
     
           "stack": "center"
         },
-        "color": {"field":"Category", "scale":{"scheme": "category20b"}},
+        "color": {"field":"Category", "scale":{"range": ["#996e1f", "##f4c251"]}},
         "tooltip": [
                 {
                     "field": "Category",

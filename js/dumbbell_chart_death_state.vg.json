@@ -1,7 +1,8 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "data": {"url": "https://raw.githubusercontent.com/ChaiKeRou/3179/main/data/death_category_state.csv"},
-    "width": 800,
+    "width": "container",
+    "background": null,
     "encoding": {
       "x": {
         "field": "deaths",
@@ -28,7 +29,7 @@
             "field": "state",
             "type": "nominal"
           },
-          "color": {"value": "#db646f"}
+          "color": {"value": "#f7bc00"}
         }
       },
       {
@@ -42,7 +43,7 @@
             "type": "nominal",
             "scale": {
               "domain": ["Medically certified","Non-medically certified"],
-              "range": ["#e6959c", "#911a24"]
+              "range": ["#996e1f", "#f4c251"]
             },
             "title": "Year"
           },

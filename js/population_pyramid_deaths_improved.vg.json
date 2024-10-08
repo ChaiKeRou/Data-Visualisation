@@ -69,8 +69,8 @@
           "field": "gender",
           "scale": {
             "range": [
-              "#675193",
-              "#ca8861"
+              "#e30133",
+              "#2f88a6"
             ]
           },
           "legend": {
@@ -188,8 +188,8 @@
           "field": "gender",
           "scale": {
             "range": [
-              "#675193",
-              "#ca8861"
+              "#e30133",
+              "#2f88a6"
             ]
           },
           "legend": null
