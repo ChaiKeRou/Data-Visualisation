@@ -69,7 +69,8 @@
         "type": "text",
         "align": "center",
         "fontSize": 20,
-        "font": "Bungee Inline"
+        "font": "Bungee Inline",
+        "color":  "#74491f"
       },
       "encoding": {
         "y": {
@@ -98,8 +99,8 @@
             "fontWeight": "bold",
             "align": "left",
             "baseline": "middle",
-            "fontSize": 16,
-            "color": "black",
+            "fontSize": 18,
+            "color": "#f7bc00",
             "lineBreak": "\n"
           },
           "encoding": {
@@ -117,8 +118,8 @@
             "fontWeight": "bold",
             "align": "left",
             "baseline": "middle",
-            "fontSize": 16,
-            "color": "black",
+            "fontSize": 18,
+            "color": "#f7bc00",
             "lineBreak": "\n"
           },
           "encoding": {
@@ -136,8 +137,8 @@
             "fontWeight": "bold",
             "align": "left",
             "baseline": "middle",
-            "fontSize": 16,
-            "color": "black",
+            "fontSize": 18,
+            "color": "#f7bc00",
             "lineBreak": "\n"
           },
           "encoding": {
@@ -155,8 +156,8 @@
             "fontWeight": "bold",
             "align": "left",
             "baseline": "middle",
-            "fontSize": 16,
-            "color": "black",
+            "fontSize": 18,
+            "color": "#f7bc00",
             "lineBreak": "\n"
           },
           "encoding": {
@@ -168,7 +169,7 @@
       ]
     },
     {
-      "width": 415,
+      "width": 400,
       "height": 400,
       "mark": {
         "type": "image",
