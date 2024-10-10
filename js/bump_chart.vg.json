@@ -130,113 +130,119 @@
             "color": {
               "field": "Causes of death",
               "type": "nominal",
+              "legend": null,
               "scale": {
                 "range": [
-                  "#1f77b4",
-                  "#ff7f0e",
-                  "#2ca02c",
-                  "#d62728",
-                  "#9467bd",
-                  "#8c564b",
-                  "#e377c2",
-                  "#7f7f7f",
-                  "#bcbd22",
-                  "#17becf",
-                  "#aec7e8",
-                  "#ffbb78",
-                  "#98df8a",
-                  "#ff9896",
-                  "#c5b0d5",
+                  "#dcd2c8",
+                  "#e17300",
+                  "#dcd2c8",
+                  "#4a7b89",
                   "#dcd2c8",
                   "#dcd2c8",
                   "#dcd2c8",
-                  "#f5f5f5",
-                  "#ead4ac"
+                  "#aa9228",
+                  "#dcd2c8",
+                  "#dcd2c8",
+                  "#dcd2c8",
+                  "#dcd2c8",
+                  "#dcd2c8",
+                  "#dcd2c8",
+                  "#dcd2c8",
+                  "#dcd2c8",
+                  "#dcd2c8",
+                  "#dcd2c8",
+                  "#dcd2c8",
+                  "#dcd2c8"
+                ]
+              }},
+              "opacity": {
+                "condition": {
+                  "selection": "CauseSelection",
+                  "value": 1
+                },
+                "value": 0.2
+              },
+              "tooltip": [
+                {
+                  "field": "Causes of death",
+                  "title": "Causes of Death",
+                  "type": "nominal"
+                },
+                {
+                  "field": "Year",
+                  "title": "Year",
+                  "type": "quantitative"
+                },
+                {
+                  "field": "Deaths",
+                  "title": "Death Cases",
+                  "type": "quantitative",
+                  "format": ","
+                }
               ]
-              },
-              "legend": null
-            },
-            "opacity": {
-              "condition": {
-                "selection": "CauseSelection",
-                "value": 1
-              },
-              "value": 0.2
-            },
-            "tooltip": [
-              {
-                "field": "Causes of death",
-                "title": "Causes of death",
-                "type": "nominal"
-              },
-              {
-                "field": "Category",
-                "title": "Category",
-                "type": "nominal"
-              },
-              {
-                "field": "Year",
-                "title": "Year",
-                "type": "quantitative"
-              },
-              {
-                "field": "Deaths",
-                "title": "Deaths",
-                "type": "quantitative",
-                "format": ","
-              }
-            ]
-          }
-        },
-        {
-          "mark": {
-            "type": "text",
-            "align": "center",
-            "baseline": "middle",
-            "dx": 0,
-            "dy": 0
+            }
           },
-          "encoding": {
-            "text": {
-              "field": "Rank",
-              "type": "ordinal"
+          {
+            "mark": {
+              "type": "text",
+              "align": "center",
+              "baseline": "middle",
+              "dx": 0,
+              "dy": 0
             },
-            "x": {
-              "field": "Year",
-              "type": "ordinal"
-            },
-            "y": {
-              "field": "Rank",
-              "type": "ordinal",
-              "sort": [
-                "1",
-                "2",
-                "3",
-                "4",
-                "5",
-                "6",
-                "7",
-                "8",
-                "9",
-                "10",
-                "11",
-                "12",
-                "13",
-                "14",
-                "15",
-                "16",
-                "17",
-                "18",
-                "19",
-                "20"
-              ]
-            },
-            "color": {
-              "value": "#ebecdf"
+            "encoding": {
+              "color": {
+                "condition": [{
+                  "test": "datum['Causes of death'] == 'COVID-19 infection (due to)'",
+                  "value": "#ebecdf"
+                },
+                {
+                  "test": "datum['Causes of death'] == 'Asthma'",
+                  "value": "#ebecdf"
+                },
+                {
+                  "test": "datum['Causes of death'] == 'Diabetes mellitus '",
+                  "value": "#ebecdf"
+                }],
+                "value": "#3f2b12"
+              },
+              "text": {
+                "field": "Rank",
+                "type": "ordinal"
+              },
+              "x": {
+                "field": "Year",
+                "type": "ordinal"
+              },
+              "y": {
+                "field": "Rank",
+                "type": "ordinal",
+                "sort": [
+                  "1",
+                  "2",
+                  "3",
+                  "4",
+                  "5",
+                  "6",
+                  "7",
+                  "8",
+                  "9",
+                  "10",
+                  "11",
+                  "12",
+                  "13",
+                  "14",
+                  "15",
+                  "16",
+                  "17",
+                  "18",
+                  "19",
+                  "20"
+                ]
+              }
             }
           }
-        }
-      ]
-    }
-  ]
-}
+        ]
+      }
+    ]
+  }

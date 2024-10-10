@@ -1,5 +1,10 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "view": {
+      "stroke": ""
+    }
+  },
   "width": "container",
   "height": 500,
   "background":null,
@@ -62,8 +67,8 @@
       {"word": "Whooping cough", "count": 1, "x": 305, "y": 158, "angle": -90, "Causes of Death": "Whooping cough", "Death Cases": 1},
       {"word": "Acute poliomyelitis", "count": 1, "x": 155, "y": 136, "angle": 0, "Causes of Death": "Acute poliomyelitis", "Death Cases": 1},
       {"word": "Mental and behavioural disorders due to psychoactive substance use", "count": 1, "x": 353, "y": 243, "angle": -90, "Causes of Death": "Mental and behavioural disorders due to psychoactive substance use", "Death Cases": 1},
-      {"word": "Old age", "count": 35679, "x": 280, "y": 102, "angle": 0, "Causes of Death": "Old age", "Death Cases": 35679},
-      {"word": "65 years and over", "count": 35679, "x": 278, "y": 75, "angle": 0, "Causes of Death": "65 years and over", "Death Cases": 25679},
+      {"word": "Old age", "count": 35679, "x": 280, "y": 102, "angle": 0, "Causes of Death": "Old age 65 years and over", "Death Cases": 35679},
+      {"word": "65 years and over", "count": 35679, "x": 278, "y": 75, "angle": 0, "Causes of Death": "Old age 65 years and over", "Death Cases": 25679},
       {"word": "Other diseases", "count": 2697, "x": 280, "y": 260, "angle": 0, "Causes of Death": "Other diseases", "Death Cases": 2697},
       {"word": "Other cancer", "count": 1652, "x": 312, "y": 283, "angle": -90, "Causes of Death": "Other cancer", "Death Cases": 1652},
       {"word": "Colon, rectum and anus cancer", "count": 928, "x": 122, "y": 83, "angle": 0, "Causes of Death": "Colon, rectum and anus cancer", "Death Cases": 928},

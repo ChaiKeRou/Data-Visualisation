@@ -5,6 +5,18 @@
   },
   "width": "container",
   "background": null,
+  "params": [
+    {
+      "name": "sex_highlight",
+      "select": {
+        "type": "point",
+        "on": "click",
+        "fields": [
+          "gender"
+        ]
+      }
+    }
+  ],
   "facet": {
     "field": "cause_death",
     "type": "nominal"
@@ -31,7 +43,14 @@
             "#2f88a6"
           ]
         }
-      }
+      },
+      "opacity": {
+          "condition": {
+            "param": "sex_highlight",
+            "value": 1
+          },
+          "value": 0.2
+        }
     }
   },
   "config": {

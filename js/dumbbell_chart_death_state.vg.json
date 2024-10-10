@@ -45,6 +45,7 @@
               "domain": ["Medically certified","Non-medically certified"],
               "range": ["#996e1f", "#f4c251"]
             },
+            "legend": null,
             "title": "Year"
           },
           "size": {"value": 100},

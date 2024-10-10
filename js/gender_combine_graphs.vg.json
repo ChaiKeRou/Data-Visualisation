@@ -1,0 +1,291 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+        "url": "https://raw.githubusercontent.com/ChaiKeRou/3179/main/data/state_diseases.csv"
+    },
+    "width": "container",
+    "background": null,
+    "params": [
+        {
+            "name": "sex_highlight",
+            "select": {
+                "type": "point",
+                "fields": [
+                    "gender"
+                ]
+            },
+            "bind": "legend"
+        }
+    ],
+    "vconcat": [
+        {
+            "facet": {
+                "field": "cause_death",
+                "type": "nominal"
+            },
+            "spec": {
+                "width": 380,
+                "mark": "bar",
+                "encoding": {
+                    "x": {
+                        "field": "state",
+                        "type": "nominal"
+                    },
+                    "y": {
+                        "field": "death_rate",
+                        "type": "quantitative"
+                    },
+                    "color": {
+                        "field": "gender",
+                        "type": "nominal",
+                        "legend": null,
+                        "scale": {
+                            "range": [
+                                "#e30133",
+                                "#2f88a6"
+                            ]
+                        }
+                    },
+                    "opacity": {
+                        "condition": {
+                            "param": "sex_highlight",
+                            "value": 1
+                        },
+                        "value": 0.2
+                    }
+                }
+            }
+        },
+        {
+            "data": {
+                "url": "https://raw.githubusercontent.com/ChaiKeRou/3179/main/data/crude_death_age_gender.csv"
+            },
+            "background": null,
+            "transform": [
+                {
+                    "calculate": "datum.Sex == 'Female' ? 'Female' : 'Male'",
+                    "as": "gender"
+                },
+                {
+                    "calculate": "datum.Sex == 'Male' ? -datum.Deaths : datum.Deaths",
+                    "as": "Deaths_adjusted"
+                }
+            ],
+            "spacing": 0,
+            "hconcat": [
+                {
+                    "transform": [
+                        {
+                            "filter": "datum.gender == 'Female'"
+                        }
+                    ],
+                    "title": "Female",
+                    "mark": "bar",
+                    "encoding": {
+                        "y": {
+                            "field": "Age group",
+                            "sort": [
+                                ">= 85",
+                                "80-84",
+                                "75-79",
+                                "70-74",
+                                "65-69",
+                                "60-64",
+                                "55-59",
+                                "50-54",
+                                "45-49",
+                                "40-44",
+                                "35-39",
+                                "30-34",
+                                "25-29",
+                                "20-24",
+                                "15-19",
+                                "10-14",
+                                "5-9",
+                                "0-4"
+                            ],
+                            "axis": null
+                        },
+                        "x": {
+                            "aggregate": "sum",
+                            "field": "Deaths_adjusted",
+                            "title": "Population",
+                            "axis": {
+                                "format": "s"
+                            },
+                            "sort": "descending"
+                        },
+                        "color": {
+                            "field": "gender",
+                            "scale": {
+                                "range": [
+                                    "#e30133",
+                                    "#2f88a6"
+                                ]
+                            },
+                            "legend": {
+                                "title": "Gender",
+                                "orient": "top"
+                            }
+                        },
+                        "opacity": {
+                            "condition": {
+                                "param": "sex_highlight",
+                                "value": 1
+                            },
+                            "value": 0.2
+                        },
+                        "tooltip": [
+                            {
+                                "field": "Age group",
+                                "title": "Age Range",
+                                "type": "ordinal"
+                            },
+                            {
+                                "field": "Deaths",
+                                "title": "Deaths of Female",
+                                "type": "quantitative",
+                                "format": ","
+                            },
+                            {
+                                "field": "total_deaths",
+                                "title": "Total Deaths",
+                                "type": "quantitative",
+                                "format": ","
+                            }
+                        ]
+                    }
+                },
+                {
+                    "width": 20,
+                    "view": {
+                        "stroke": null
+                    },
+                    "mark": {
+                        "type": "text",
+                        "align": "center"
+                    },
+                    "encoding": {
+                        "y": {
+                            "field": "Age group",
+                            "sort": [
+                                ">= 85",
+                                "80-84",
+                                "75-79",
+                                "70-74",
+                                "65-69",
+                                "60-64",
+                                "55-59",
+                                "50-54",
+                                "45-49",
+                                "40-44",
+                                "35-39",
+                                "30-34",
+                                "25-29",
+                                "20-24",
+                                "15-19",
+                                "10-14",
+                                "5-9",
+                                "0-4"
+                            ],
+                            "axis": null
+                        },
+                        "text": {
+                            "field": "Age group"
+                        }
+                    }
+                },
+                {
+                    "transform": [
+                        {
+                            "filter": "datum.gender == 'Male'"
+                        }
+                    ],
+                    "title": "Male",
+                    "mark": "bar",
+                    "encoding": {
+                        "y": {
+                            "field": "Age group",
+                            "sort": [
+                                ">= 85",
+                                "80-84",
+                                "75-79",
+                                "70-74",
+                                "65-69",
+                                "60-64",
+                                "55-59",
+                                "50-54",
+                                "45-49",
+                                "40-44",
+                                "35-39",
+                                "30-34",
+                                "25-29",
+                                "20-24",
+                                "15-19",
+                                "10-14",
+                                "5-9",
+                                "0-4"
+                            ],
+                            "axis": null
+                        },
+                        "x": {
+                            "aggregate": "sum",
+                            "field": "Deaths_adjusted",
+                            "title": "Population",
+                            "sort": "descending",
+                            "axis": {
+                                "format": "s"
+                            }
+                        },
+                        "color": {
+                            "field": "gender",
+                            "scale": {
+                                "range": [
+                                    "#e30133",
+                                    "#2f88a6"
+                                ]
+                            },
+                            "legend": null
+                        },
+                        "opacity": {
+                            "condition": {
+                                "param": "sex_highlight",
+                                "value": 1
+                            },
+                            "value": 0.2
+                        },
+                        "tooltip": [
+                            {
+                                "field": "Age group",
+                                "title": "Age Range",
+                                "type": "ordinal"
+                            },
+                            {
+                                "field": "Deaths",
+                                "title": "Deaths of Male",
+                                "type": "quantitative",
+                                "format": ","
+                            },
+                            {
+                                "field": "total_deaths",
+                                "title": "Total Deaths",
+                                "type": "quantitative",
+                                "format": ","
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "config": {
+        "facet": {
+            "columns": 2
+        }
+    },
+    "resolve": {
+        "axis": {
+            "x": "independent"
+        }
+    }
+}

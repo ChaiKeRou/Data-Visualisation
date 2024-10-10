@@ -15,6 +15,10 @@
           "color": {
             "field": "death_rate",
             "type": "quantitative",
+            "scale":{
+              "domain": [0.48, 52.52], 
+            "range": ["#fcedcb","#f29900", "#e17300","#cf3e23", "#980017"] 
+            },
             "title": "Death Rate",
             "legend": null
           }
