@@ -14,11 +14,16 @@
       "as": "Deaths_adjusted"
     }
   ],
-  "params":[
+  "params": [
     {
-    "name": "sex_highlight",
-    "select": {"type": "point", "fields": ["gender"]},
-    "bind": "legend"
+      "name": "sex_highlight",
+      "select": {
+        "type": "point",
+        "on": "click",
+        "fields": [
+          "gender"
+        ]
+      }
     }
   ],
   "spacing": 0,
@@ -59,9 +64,10 @@
         "x": {
           "aggregate": "sum",
           "field": "Deaths_adjusted",
-          "title": "Population",
+          "title": "Death Cases",
           "axis": {
-            "format": "s"
+            "format": "s",
+            "domain": [0,20000]
           },
           "sort": "descending"
         },
@@ -79,7 +85,10 @@
           }
         },
         "opacity": {
-          "condition": {"param": "sex_highlight", "value": 1},
+          "condition": {
+            "param": "sex_highlight",
+            "value": 1
+          },
           "value": 0.2
         },
         "tooltip": [
@@ -178,10 +187,11 @@
         "x": {
           "aggregate": "sum",
           "field": "Deaths_adjusted",
-          "title": "Population",
+          "title": "Death Cases",
           "sort": "descending",
           "axis": {
-            "format": "s"
+            "labelExpr": "datum.value * -1/1000 + 'k'",
+            "labelLimit": 20
           }
         },
         "color": {
@@ -195,7 +205,10 @@
           "legend": null
         },
         "opacity": {
-          "condition": {"param": "sex_highlight", "value": 1},
+          "condition": {
+            "param": "sex_highlight",
+            "value": 1
+          },
           "value": 0.2
         },
         "tooltip": [
