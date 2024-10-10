@@ -1,11 +1,5 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": {
-    "text": "Crude Death Rate by State in Malaysia Per 1,000 Population (2022)",
-    "fontSize": 22,
-    "fontWeight": "bold",
-    "font": "Arial"
-  },
   "width": "container",
   "height": 500,
   "projection": {

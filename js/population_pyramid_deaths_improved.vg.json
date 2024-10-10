@@ -79,10 +79,7 @@
               "#2f88a6"
             ]
           },
-          "legend": {
-            "title": "Gender",
-            "orient": "top"
-          }
+          "legend": null
         },
         "opacity": {
           "condition": {

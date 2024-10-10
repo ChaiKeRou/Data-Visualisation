@@ -5,8 +5,8 @@
     "width": "container",
     "background": null,
     "encoding": {
-      "y": {"field": "age_range", "type": "ordinal"},
-      "x": {"field": "state", "type": "nominal"}
+      "y": {"field": "age_range", "type": "ordinal", "title":"Age Range"},
+      "x": {"field": "state", "type": "nominal", "title":"State"}
     },
     "layer": [
       {

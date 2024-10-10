@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CAUSE OF DEATH IN MALAYSIA, 2022</title>
+
+
+  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.5.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.0"></script>
+
+  <!-- CSS file -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+  <link rel="stylesheet" href="css/layout.css">
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Marker+Hatch&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+
+  <!-- Import pure.css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
+    integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css" />
+
+
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1">
+        <h1 class="main-title">CAUSE OF DEATH</h1>
+        <h1 class="sub-title">IN MALAYSIA, 2022</h1>
+      </div>
+    </div>
+
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1">
+        <p>Statistics on Causes of Death, Malaysia, 2023 presents data on the leading causes of death in 2022. The
+          Department of Statistics Malaysia (DOSM) classifies these causes using the ICD-10 system by the World Health
+          Organization (2010). The data, sourced from the National Registration Department, reflect demographic
+          adjustments from the Population and Housing Census of Malaysia 2020 (MyCensus 2020) for the years 2020 to
+          2022.</p>
+
+        <p>Causes of death are categorized as either medically or non-medically certified:</p>
+
+        <ul>
+          <li class="medically-certified">Medically certified: Verified by medical officers or coroners.</li>
+          <li class="non-medically-certified">Non-medically certified: Verified by individuals without medical
+            qualifications, such as informants or police.</li>
+        </ul>
+
+        <p>Since 2018, the Ministry of Health Malaysia (MoH) has worked to increase medically certified deaths. In
+          2022, 61.1% of 206,525 deaths were medically certified, while 38.9% were non-medically certified. This report
+          highlights the leading medically certified causes of death in 2022.</p>
+      </div>
+    </div>
+
+
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1">
+        <div id="vis7" class="vis-container"></div>
+      </div>
+    </div>
+
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1">
+        <div id="vis8" class="vis-container"></div>
+      </div>
+    </div>
+
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1">
+        <div id="vis1" class="vis-container"></div>
+      </div>
+    </div>
+
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1">
+        <div id="vis6" class="vis-container"></div>
+      </div>
+    </div>
+
+
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1">
+        <div id="vis2" class="vis-container"></div>
+      </div>
+    </div>
+
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1">
+        <div id="vis3" class="vis-container-1-2"></div>
+      </div>
+    </div>
+
+
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1">
+        <div id="vis5" class="vis-container"></div>
+      </div>
+    </div>
+
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1-2">
+        <div id="vis4" class="vis-container"></div>
+      </div>
+
+      <div class="pure-u-1-2">
+        <p class="population-pyramid-exp">
+          In 2022, Malaysia recorded a total of 206,525 deaths, with 117,790 males and 88,735 females, indicating a
+          significant gender disparity in mortality rates, where male deaths exceeded female deaths by 14.07%.
+        </p>
+
+        <p class="population-pyramid-exp">
+          In middle age, deaths sharply increased from 4,632 in the 35-39 years group to 11,865 in the 50-54 years
+          group, with males consistently exhibiting higher mortality rates.
+
+          Among the elderly (60 years and above), the 85 and over group recorded the highest mortality at 27,735 deaths,
+          with females (17,085) outnumbering males (10,650). In contrast, in the 70-74 years age group, males slightly
+          outnumbered females, with 14,446 deaths compared to 10,543 females.
+        </p>
+        <p class="population-pyramid-exp">
+          Overall, while males have higher mortality rates in most age groups, females outnumber males in the 85+
+          category, highlighting significant changes in mortality patterns with age.</p>
+      </div>
+    </div>
+
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1">
+        <div id="vis9" class="vis-container"></div>
+      </div>
+    </div>
+
+
+
+
+
+  </div> <!-- end page -->
+
+
+  <script type="text/javascript">
+    var specVis1 = "js/word_cloud_causes.vg.json";
+    var specVis2 = "js/choropleth_map_deaths.vg.json";
+    var specVis3 = "js/heat_map_state_death.vg.json";
+    var specVis4 = "js/population_pyramid_deaths_improved.vg.json";
+    var specVis5 = "js/isotype_deaths.vg.json";
+    var specVis6 = "js/bump_chart.vg.json";
+    var specVis7 = "js/brush_stream_graph.vg.json";
+    var specVis8 = "js/dumbbell_chart_death_state.vg.json";
+    var specVis9 = "js/multiple_view_bar.vg.json";
+
+    vegaEmbed('#vis1', specVis1, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis2', specVis2, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis3', specVis3, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis4', specVis4, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis5', specVis5, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis6', specVis6, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis7', specVis7, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis8', specVis8, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis9', specVis9, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+  </script>
+
+</body>
+
+</html>

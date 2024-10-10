@@ -1,0 +1,53 @@
+.main-title {
+    font-family: "Rubik Marker Hatch", system-ui;
+    font-size: 90px;
+    margin: 0;
+    text-align: center;
+    color: #e9311a;
+
+}
+
+.sub-title {
+    font-family: "Rubik Marker Hatch", system-ui;
+    font-size: 50px;
+    margin: 0;
+    text-align: center;
+    color: #e9311a;
+}
+
+.medically-certified {
+    color: #996e1f; /* You can specify any color here */
+}
+  
+  .non-medically-certified {
+    color: #f4c251; /* You can specify any color here */
+}
+
+  
+/* Google font */
+.rubik-marker-hatch-regular {
+    font-family: "Rubik Marker Hatch", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lilita-one-regular {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.afacad-flux-regular {
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+}
+
+.bungee-inline-regular {
+    font-family: "Bungee Inline", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}

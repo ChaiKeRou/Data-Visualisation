@@ -3,6 +3,11 @@
   "data": {
     "url": "https://raw.githubusercontent.com/ChaiKeRou/3179/main/data/state_diseases.csv"
   },
+  "transform": [
+    {
+      "calculate": "datum.gender == 'female' ? 'Female' : 'Male'",
+      "as": "gender"
+    }],
   "width": "container",
   "background": null,
   "params": [
@@ -27,11 +32,13 @@
     "encoding": {
       "x": {
         "field": "state",
-        "type": "nominal"
+        "type": "nominal",
+        "title": "State"
       },
       "y": {
         "field": "death_rate",
-        "type": "quantitative"
+        "type": "quantitative",
+        "title": "Death Rate"
       },
       "color": {
         "field": "gender",
@@ -50,7 +57,24 @@
             "value": 1
           },
           "value": 0.2
-        }
+        },
+        "tooltip": [
+          {
+            "field": "state",
+            "title": "State",
+            "type": "nominal"
+          },
+          {
+            "field": "gender",
+            "title": "Gender",
+            "type": "nominal"
+          },
+          {
+            "field": "death_rate",
+            "title": "Death Rate",
+            "type": "quantitative"
+          }
+        ]
     }
   },
   "config": {
