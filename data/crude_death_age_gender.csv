@@ -1,7 +1,7 @@
 Age group,Deaths,Sex,total_deaths
 0-4,2051,Male,3655
-5-Sep,275,Male,481
-Oct-14,352,Male,618
+5-9,275,Male,481
+10-14,352,Male,618
 15-19,1084,Male,1460
 20-24,1568,Male,2083
 25-29,1647,Male,2339
@@ -18,8 +18,8 @@ Oct-14,352,Male,618
 80-84,11476,Male,23434
 >= 85,10650,Male,27735
 0-4,1604,Female,3655
-5-Sep,206,Female,481
-Oct-14,266,Female,618
+5-9,206,Female,481
+10-14,266,Female,618
 15-19,376,Female,1460
 20-24,515,Female,2083
 25-29,692,Female,2339
