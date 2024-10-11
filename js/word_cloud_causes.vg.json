@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "config": {
-    "font": "Lilita One",
+    "font": "Belanosima",
     "view": {
       "stroke": ""
     }
