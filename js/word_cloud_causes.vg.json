@@ -1,6 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "config": {
+    "font": "Lilita One",
     "view": {
       "stroke": ""
     }
@@ -95,9 +96,7 @@
   },
   "mark": {
     "type": "text",
-    "tooltip": true,
-    "fontWeight": "bold",
-    "font": "Lilita One"
+    "tooltip": true
   },
   "encoding": {
     "x": {
