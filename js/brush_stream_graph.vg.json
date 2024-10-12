@@ -15,7 +15,7 @@
         },
         "y": {
           "aggregate": "sum", "field": "Deaths",
-    
+          "axis": null,
           "stack": "center"
         },
         "color": {"field":"Category", "scale":{"range": ["#996e1f", "#f4c251"]}, "legend": null},
@@ -54,7 +54,7 @@
         },
         "y": {
           "aggregate": "sum", "field": "Deaths",
-    
+          "axis": null,
           "stack": "center"
         },
         "color": {"field":"Category", "scale":{"range": ["#996e1f", "##f4c251"]}},
