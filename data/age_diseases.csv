@@ -1,0 +1,33 @@
+age,death_cases,cause_death,gender
+0-14,4,Ischaemic Heart Diseases,male
+15-40,861,Ischaemic Heart Diseases,male
+41-59,4808,Ischaemic Heart Diseases,male
+>=60,8144,Ischaemic Heart Diseases,male
+0-14,5,Ischaemic Heart Diseases,female
+15-40,161,Ischaemic Heart Diseases,female
+41-59,1156,Ischaemic Heart Diseases,female
+>=60,5185,Ischaemic Heart Diseases,female
+0-14,84,Pneumonia,male
+15-40,551,Pneumonia,male
+41-59,1791,Pneumonia,male
+>=60,7143,Pneumonia,male
+0-14,82,Pneumonia,female
+15-40,292,Pneumonia,female
+41-59,970,Pneumonia,female
+>=60,5857,Pneumonia,female
+0-14,20,Cerebrovascular Diseases,male
+15-40,308,Cerebrovascular Diseases,male
+41-59,1454,Cerebrovascular Diseases,male
+>=60,3374,Cerebrovascular Diseases,male
+0-14,20,Cerebrovascular Diseases,female
+15-40,158,Cerebrovascular Diseases,female
+41-59,726,Cerebrovascular Diseases,female
+>=60,3089,Cerebrovascular Diseases,female
+0-14,36,COVID-19 Infection,male
+15-40,177,COVID-19 Infection,male
+41-59,568,COVID-19 Infection,male
+>=60,2279,COVID-19 Infection,male
+0-14,35,COVID-19 Infection,female
+15-40,99,COVID-19 Infection,female
+41-59,342,COVID-19 Infection,female
+>=60,1778,COVID-19 Infection,female
