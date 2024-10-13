@@ -1,15 +1,15 @@
 State,Administrative district,Crude death rate,state_id
-Johor  ,,6.28 ,JHR
-Johor  ,Batu Pahat,7.57 ,JHR
-Johor  ,Johor Bahru,4.63 ,JHR
-Johor  ,Kluang,7.46 ,JHR
-Johor  ,Kota Tinggi,8.55 ,JHR
-Johor  ,Mersing,8.84 ,JHR
-Johor  ,Muar,7.19 ,JHR
-Johor  ,Pontian,8.80 ,JHR
-Johor  ,Segamat,9.61 ,JHR
-Johor  ,Kulai,4.89 ,JHR
-Johor  ,Tangkak,7.45 ,JHR
+Johor,,6.28 ,JHR
+Johor,Batu Pahat,7.57 ,JHR
+Johor,Johor Bahru,4.63 ,JHR
+Johor,Kluang,7.46 ,JHR
+Johor,Kota Tinggi,8.55 ,JHR
+Johor,Mersing,8.84 ,JHR
+Johor,Muar,7.19 ,JHR
+Johor,Pontian,8.80 ,JHR
+Johor,Segamat,9.61 ,JHR
+Johor,Kulai,4.89 ,JHR
+Johor,Tangkak,7.45 ,JHR
 ,,,
 Kedah,,8.15 ,KDH
 Kedah,Baling,10.29 ,KDH
@@ -181,8 +181,8 @@ Terengganu,Hulu Terengganu,8.95 ,TRG
 Terengganu,Setiu,8.47 ,TRG
 Terengganu,Kuala Nerus,4.61 ,TRG
 ,,,
-W.P. Kuala Lumpur,,5.08 ,KUL
+W.P. Kuala Lumpur,Kuala Lumpur,5.08 ,KUL
 ,,,
-W.P. Labuan,,4.05 ,LBN
+W.P. Labuan,Labuan,4.05 ,LBN
 ,,,
-W.P. Putrajaya,,2.16 ,PJY
+W.P. Putrajaya,Putrajaya,2.16 ,PJY
