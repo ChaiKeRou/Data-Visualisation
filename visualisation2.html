@@ -22,7 +22,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Pontano+Sans:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pontano+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pontano+Sans:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pontano+Sans:wght@700&display=swap" rel="stylesheet">
 
   <!-- Import pure.css -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
@@ -41,45 +44,7 @@
     <div class="pure-g">
       <div class="pure-u-1">
         <h1 class="main-title">CAUSE OF DEATH</h1>
-        <h1 class="sub-title">IN MALAYSIA, 2022</h1>
-      </div>
-    </div>
-
-    <!-- pure grid group -->
-    <div class="pure-g">
-      <div class="pure-u-1">
-        <p>Statistics on Causes of Death, Malaysia, 2023 presents data on the leading causes of death in 2022. The
-          Department of Statistics Malaysia (DOSM) classifies these causes using the ICD-10 system by the World Health
-          Organization (2010). The data, sourced from the National Registration Department, reflect demographic
-          adjustments from the Population and Housing Census of Malaysia 2020 (MyCensus 2020) for the years 2020 to
-          2022.</p>
-
-        <p>Causes of death are categorized as either medically or non-medically certified:</p>
-
-        <ul>
-          <li class="medically-certified">Medically certified: Verified by medical officers or coroners.</li>
-          <li class="non-medically-certified">Non-medically certified: Verified by individuals without medical
-            qualifications, such as informants or police.</li>
-        </ul>
-
-        <p>Since 2018, the Ministry of Health Malaysia (MoH) has worked to increase medically certified deaths. In
-          2022, 61.1% of 206,525 deaths were medically certified, while 38.9% were non-medically certified. This report
-          highlights the leading medically certified causes of death in 2022.</p>
-      </div>
-    </div>
-
-
-    <!-- pure grid group -->
-    <div class="pure-g">
-      <div class="pure-u-1">
-        <div id="vis7" class="vis-container"></div>
-      </div>
-    </div>
-
-    <!-- pure grid group -->
-    <div class="pure-g">
-      <div class="pure-u-1">
-        <div id="vis8" class="vis-container"></div>
+        <h1 class="sub-title">IN MALAYSIA (2022)</h1>
       </div>
     </div>
 
@@ -90,10 +55,23 @@
       </div>
     </div>
 
+
     <!-- pure grid group -->
     <div class="pure-g">
-      <div class="pure-u-1">
-        <div id="vis6" class="vis-container"></div>
+      <div class="pure-u-1-2">
+        <div id="vis7" class="vis-container"></div>
+      </div>
+
+      <div class="pure-u-1-2">
+        <p>Since 2018, the Ministry of Health Malaysia (MoH) has implemented a process to verify <span class="non-medically-certified">non-medically certified</span>
+          causes of death to increase percentage of deaths that are <span class="medically-certified">medically certified</span>. In <span class="keywords">2022</span>, <span class="medically-certified">61.1%</span>
+ of <span class="keywords">206,525</span> recorded deaths were medically certified, while <span class="non-medically-certified">38.9%</span> were not.</p>
+
+        <p>The Department of Statistics Malaysia (DOSM) follows the International Statistical Classification of Diseases
+          and Related Health Problems, 10th Revision (ICD-10), published by the World Health Organization, to
+          categorize causes of death. These causes are classified as <span class="medically-certified">Medically Certified, where verification is done by
+            medical officers or coroners</span>, and <span class="non-medically-certified">Non-medically Certified, where verification is conducted by informants
+              without medical qualifications, such as individuals or the police</span>.</p>
       </div>
     </div>
 
@@ -111,15 +89,6 @@
         <div id="vis3" class="vis-container-1-2"></div>
       </div>
     </div>
-
-
-    <!-- pure grid group -->
-    <div class="pure-g">
-      <div class="pure-u-1">
-        <div id="vis5" class="vis-container"></div>
-      </div>
-    </div>
-
     <!-- pure grid group -->
     <div class="pure-g">
       <div class="pure-u-1-2">
@@ -127,7 +96,8 @@
       </div>
 
       <div class="pure-u-1-2">
-        <p class="population-pyramid-exp">
+        <div id="vis10" class="vis-container"></div>
+        <!-- <p class="population-pyramid-exp">
           In 2022, Malaysia recorded a total of 206,525 deaths, with 117,790 males and 88,735 females, indicating a
           significant gender disparity in mortality rates, where male deaths exceeded female deaths by 14.07%.
         </p>
@@ -142,21 +112,34 @@
         </p>
         <p class="population-pyramid-exp">
           Overall, while males have higher mortality rates in most age groups, females outnumber males in the 85+
-          category, highlighting significant changes in mortality patterns with age.</p>
+          category, highlighting significant changes in mortality patterns with age.</p> -->
       </div>
     </div>
 
     <!-- pure grid group -->
     <div class="pure-g">
       <div class="pure-u-1">
-        <div id="vis9" class="vis-container"></div>
+        <div id="vis5" class="vis-container"></div>
       </div>
     </div>
 
 
 
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1">
+        <div id="vis6" class="vis-container"></div>
+      </div>
+    </div>
 
 
+
+    <!-- pure grid group -->
+    <div class="pure-g">
+      <div class="pure-u-1">
+        <div id="vis8" class="vis-container"></div>
+      </div>
+    </div>
   </div> <!-- end page -->
 
 
@@ -170,6 +153,7 @@
     var specVis7 = "js/brush_stream_graph.vg.json";
     var specVis8 = "js/dumbbell_chart_death_state.vg.json";
     var specVis9 = "js/multiple_view_bar.vg.json";
+    var specVis10 = "js/multiple_view_age.vg.json";
 
     vegaEmbed('#vis1', specVis1, { "actions": false }).then(function (result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
@@ -204,6 +188,10 @@
     }).catch(console.error);
 
     vegaEmbed('#vis9', specVis9, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis10', specVis10, { "actions": false }).then(function (result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
   </script>

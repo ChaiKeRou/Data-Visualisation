@@ -10,7 +10,7 @@
       "as": "gender"
     },
     {
-      "calculate": "datum.Sex == 'Male' ? -datum.Deaths : datum.Deaths",
+      "calculate": "datum.Sex == 'Female' ? -datum.Deaths : datum.Deaths",
       "as": "Deaths_adjusted"
     }
   ],
@@ -19,7 +19,7 @@
       "name": "sex_highlight",
       "select": {
         "type": "point",
-        "on": "click",
+        "on": "mouseover",
         "fields": [
           "gender"
         ]
@@ -31,10 +31,11 @@
     {
       "transform": [
         {
-          "filter": "datum.gender == 'Female'"
+          "filter": "datum.gender == 'Male'"
         }
       ],
-      "title": "Female",
+      "title": "Male",
+      "height": 447,
       "mark": "bar",
       "encoding": {
         "y": {
@@ -65,11 +66,11 @@
           "aggregate": "sum",
           "field": "Deaths_adjusted",
           "title": "Death Cases",
+          "sort": "descending",
           "axis": {
             "format": "s"
           },
-          "scale": {"domain": [0, 20000]},
-          "sort": "descending"
+          "scale": {"domain": [0, 20000]}
         },
         "color": {
           "field": "gender",
@@ -96,7 +97,7 @@
           },
           {
             "field": "Deaths",
-            "title": "Deaths of Female",
+            "title": "Deaths of Male",
             "type": "quantitative",
             "format": ","
           },
@@ -111,6 +112,7 @@
     },
     {
       "width": 20,
+      "height": 447,
       "view": {
         "stroke": null
       },
@@ -151,11 +153,12 @@
     {
       "transform": [
         {
-          "filter": "datum.gender == 'Male'"
+          "filter": "datum.gender == 'Female'"
         }
       ],
-      "title": "Male",
+      "title": "Female",
       "mark": "bar",
+      "height": 447,
       "encoding": {
         "y": {
           "field": "Age group",
@@ -185,12 +188,13 @@
           "aggregate": "sum",
           "field": "Deaths_adjusted",
           "title": "Death Cases",
-          "sort": "descending",
+          
           "axis": {
             "labelExpr": "datum.value * -1/1000 + 'k'",
             "labelLimit": 20
           },
-          "scale": {"domain": [-20000,0]}
+          "scale": {"domain": [-20000,0]},
+          "sort": "descending"
         },
         "color": {
           "field": "gender",
@@ -217,7 +221,7 @@
           },
           {
             "field": "Deaths",
-            "title": "Deaths of Male",
+            "title": "Deaths of Female",
             "type": "quantitative",
             "format": ","
           },
@@ -230,6 +234,7 @@
         ]
       }
     }
+    
   ],
   "config": {
     "view": {

@@ -1,0 +1,130 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/ChaiKeRou/3179/main/data/age_diseases.csv"
+  },
+  "transform": [
+    {
+      "calculate": "datum.gender == 'male' ? 'Male': 'Female'",
+      "as": "gender"
+    }
+  ],
+  "background": null,
+  "facet": {
+    "field": "cause_death",
+    "title": "",
+    "type": "nominal"
+  },
+  "spec": {
+    "layer": [
+      {
+        "width": 170,
+        "height": 200,
+        "mark": "bar",
+        "selection": {
+          "GenderSelection": {
+            "type": "point",
+            "on": "mouseover",
+            "fields": [
+              "gender"
+            ]
+          }
+        },
+        "encoding": {
+          "x": {
+            "field": "age",
+            "type": "nominal",
+            "title": "Age Range"
+          },
+          "y": {
+            "field": "death_cases",
+            "type": "quantitative",
+            "title": "Death Cases"
+          },
+          "color": {
+            "field": "gender",
+            "type": "nominal",
+            "legend": null,
+            "scale": {
+              "range": [
+                "#e30133",
+                "#2f88a6"
+              ]
+            }
+          },
+          "xOffset": {
+            "field": "gender",
+            "sort": ["Male", "Female"]
+          },
+          "opacity": {
+            "condition": {
+              "selection": "GenderSelection",
+              "value": 1
+            },
+            "value": 0.2
+          },
+          "tooltip": [
+            {
+              "field": "age",
+              "title": "Age Range",
+              "type": "nominal"
+            },
+            {
+              "field": "gender",
+              "title": "Gender",
+              "type": "nominal"
+            },
+            {
+              "field": "death_cases",
+              "title": "Death Cases",
+              "type": "quantitative"
+            }
+          ]
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "center",
+          "dy": -6,
+          "dx": 5,
+          "fontSize": 9
+        },
+        "encoding": {
+          "x": {
+            "field": "age",
+            "type": "nominal"
+          },
+          "y": {
+            "field": "death_cases",
+            "type": "quantitative"
+          },
+          "xOffset": {
+            "field": "gender",
+            "sort": ["Male", "Female"]
+          },
+          "text": {
+            "field": "death_cases",
+            "type": "quantitative",
+            "format": ","
+          },
+          "color": {
+            "field": "gender",
+            "type": "nominal",
+            "scale": {
+              "range": [
+                "#e30133",
+                "#2f88a6"
+              ]
+            }
+          }
+        }
+      }
+    ]
+  },
+  "config": {
+    "facet": {
+      "columns": 2
+    }
+  }
+}

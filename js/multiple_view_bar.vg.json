@@ -7,15 +7,19 @@
     {
       "calculate": "datum.gender == 'female' ? 'Female' : 'Male'",
       "as": "gender"
-    }],
-  "width": "container",
+    },
+    {
+      "filter": "datum.state == 'Selangor' || datum.state == 'Johor' || datum.state == 'Kedah' || datum.state == 'Kelantan' || datum.state == 'Melaka' || datum.state == 'Negeri Sembilan' || datum.state == 'Pahang' || datum.state == 'Perak' || datum.state == 'Perlis' || datum.state == 'Pulau Pinang' || datum.state == 'Sabah' || datum.state == 'Sarawak' || datum.state == 'Selangor' || datum.state == 'Terengganu'"
+    }
+  ],
+  
   "background": null,
   "params": [
     {
       "name": "sex_highlight",
       "select": {
         "type": "point",
-        "on": "click",
+        "on": "mouseover",
         "fields": [
           "gender"
         ]
@@ -24,10 +28,12 @@
   ],
   "facet": {
     "field": "cause_death",
+    "title": "",
     "type": "nominal"
   },
   "spec": {
-    "width": 380,
+    "width": 170,
+  "height": 125,
     "mark": "bar",
     "encoding": {
       "x": {
@@ -80,11 +86,6 @@
   "config": {
     "facet": {
       "columns": 2
-    }
-  },
-  "resolve": {
-    "axis": {
-      "x": "independent"
     }
   }
 }

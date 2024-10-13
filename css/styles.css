@@ -9,21 +9,40 @@
 
 .sub-title {
     font-family: "Rubik Marker Hatch", system-ui;
-    font-size: 50px;
+    font-size: 65px;
     margin: 0;
     text-align: center;
     color: #e9311a;
 }
 
-.medically-certified {
-    color: #996e1f; /* You can specify any color here */
-}
-  
-  .non-medically-certified {
-    color: #f4c251; /* You can specify any color here */
+p {
+    font-family: "Pontano Sans", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.8px;
 }
 
-  
+.keywords {
+    font-family: "Pontano Sans", sans-serif;
+    font-weight: 700;
+}
+
+.medically-certified {
+    font-weight: 700;
+    font-size: 16px;
+    color: #996e1f;
+    /* You can specify any color here */
+}
+
+.non-medically-certified {
+    font-weight: 700;
+    font-size: 16px;
+    color: #f4c251;
+    /* You can specify any color here */
+}
+
+
 /* Google font */
 .rubik-marker-hatch-regular {
     font-family: "Rubik Marker Hatch", system-ui;
@@ -35,8 +54,8 @@
     font-family: "Lilita One", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
-  
+}
+
 .afacad-flux-regular {
     font-family: "Afacad Flux", sans-serif;
     font-optical-sizing: auto;
@@ -52,8 +71,30 @@
     font-style: normal;
 }
 
-.belanosima-regular {
-    font-family: "Belanosima", sans-serif;
+.pontano-sans-light {
+    font-family: "Pontano Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.pontano-sans-regular {
+    font-family: "Pontano Sans", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-  }
+}
+
+.pontano-sans-semibold {
+    font-family: "Pontano Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.pontano-sans-bold {
+    font-family: "Pontano Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}

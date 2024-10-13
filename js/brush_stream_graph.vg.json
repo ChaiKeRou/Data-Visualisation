@@ -5,7 +5,8 @@
       },
     "background": null,
     "vconcat": [{
-      "width": 770,
+      "width": "container",
+      "height": 250,
       "mark": "area",
       "encoding": {
         "x": {
@@ -33,14 +34,20 @@
                 },
                 {
                     "field": "Deaths",
-                    "title": "Deaths",
+                    "title": "Death Cases",
                     "type": "quantitative",
                     "format": ","
-                }
+                },
+                {
+                  "field": "Total_deaths",
+                  "title": "Total Death Cases",
+                  "type": "quantitative",
+                  "format": ","
+              }
             ]
       }
     }, {
-      "width": 770,
+      "width": "container",
       "height": 60,
       "mark": "area",
       "params": [{
@@ -57,26 +64,7 @@
           "axis": null,
           "stack": "center"
         },
-        "color": {"field":"Category", "scale":{"range": ["#996e1f", "##f4c251"]}},
-        "tooltip": [
-                {
-                    "field": "Category",
-                    "title": "Category",
-                    "type": "nominal"
-                },
-                {
-                    "field": "Year",
-                    "timeUnit": "year", 
-                    "title": "Year",
-                    "type": "ordinal"
-                },
-                {
-                    "field": "Deaths",
-                    "title": "Deaths",
-                    "type": "quantitative",
-                    "format": ","
-                }
-            ]
+        "color": {"field":"Category", "scale":{"range": ["#996e1f", "##f4c251"]}}
       }
     }]
   }

@@ -129,7 +129,7 @@
           }
         },
         {
-          "width": 1,
+          "width": 10,
           "height": 80,
           "mark": {
             "type": "text",
