@@ -1,71 +1,183 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": {
-        "url": "https://raw.githubusercontent.com/ChaiKeRou/3179/main/data/deaths_category_2000_2022.csv"
-      },
-    "background": null,
-    "vconcat": [{
-      "width": "container",
-      "height": 250,
-      "mark": "area",
-      "encoding": {
-        "x": {
-          "timeUnit": "year", "field": "Year",
-          "axis": {"domain": false, "format": "%Y", "tickSize": 0},
-          "scale": {"domain": {"param": "brush"}}
-        },
-        "y": {
-          "aggregate": "sum", "field": "Deaths",
-          "axis": null,
-          "stack": "center"
-        },
-        "color": {"field":"Category", "scale":{"range": ["#996e1f", "#f4c251"]}, "legend": null},
-        "tooltip": [
-                {
-                    "field": "Category",
-                    "title": "Category",
-                    "type": "nominal"
-                },
-                {
-                    "field": "Year",
-                    "timeUnit": "year", 
-                    "title": "Year",
-                    "type": "ordinal"
-                },
-                {
-                    "field": "Deaths",
-                    "title": "Death Cases",
-                    "type": "quantitative",
-                    "format": ","
-                },
-                {
-                  "field": "Total_deaths",
-                  "title": "Total Death Cases",
-                  "type": "quantitative",
-                  "format": ","
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/ChaiKeRou/3179/main/data/deaths_category_2000_2022.csv"
+  },
+  "config": {
+    "view": {
+      "stroke": ""
+    },
+    "font": "Pontano Sans"
+  },
+  "background": null,
+  "vconcat": [
+    {
+      "layer": [
+        {
+          "width": 400,
+          "height": 250,
+          "mark": "area",
+          "encoding": {
+            "x": {
+              "timeUnit": "year",
+              "field": "Year",
+              "title": "Year",
+              "axis": {
+                "domain": false,
+                "format": "%Y",
+                "tickSize": 0,
+                "titleFont": "Pontano Sans",
+                "labelFont": "Pontano Sans",
+                "titleFontWeight": 600,
+                "labelFontWeight": 300,
+                "titleFontSize": 12,
+                "labelFontSize": 10,
+                "titlePadding": 10,
+                "labelAlign": "center"
+              },
+              "scale": {
+                "domain": {
+                  "param": "brush"
+                }
+              }
+            },
+            "y": {
+              "aggregate": "sum",
+              "field": "Deaths",
+              "axis": null,
+              "stack": "center"
+            },
+            "color": {
+              "field": "Category",
+              "scale": {
+                "range": [
+                  "#996e1f",
+                  "#dcaf49"
+                ]
+              },
+              "legend": null
+            },
+            "tooltip": [
+              {
+                "field": "Category",
+                "title": "Category",
+                "type": "nominal"
+              },
+              {
+                "field": "Year",
+                "timeUnit": "year",
+                "title": "Year",
+                "type": "ordinal"
+              },
+              {
+                "field": "Deaths",
+                "title": "Death Cases",
+                "type": "quantitative",
+                "format": ","
+              },
+              {
+                "field": "Total_deaths",
+                "title": "Total Death Cases",
+                "type": "quantitative",
+                "format": ","
               }
             ]
-      }
-    }, {
-      "width": "container",
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "fontStyle": "normal",
+            "font": "Pontano Sans",
+            "align": "center",
+            "baseline": "middle",
+            "dx": 40,
+            "dy": -110,
+            "fontSize": 12,
+            "fontWeight": 300,
+            "color": "black",
+            "lineBreak": "\n",
+            "lineHeight": 15
+          },
+          "encoding": {
+            "text": {
+              "value": "In 2018, there was a notable rise in the \nnumber of deaths that were medically certified."
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "rule",
+            "color": "black",
+            "strokeWidth": 0.5
+          },
+          "encoding": {
+            "x": {
+              "value": 240
+            },
+            "x2": {
+              "value": 320
+            },
+            "y": {
+              "value": 50
+            },
+            "y2": {
+              "value": 150
+            }
+          }
+        }
+      ]
+    },
+    {
+      "width": 400,
       "height": 60,
       "mark": "area",
-      "params": [{
-        "name": "brush",
-        "select": {"type": "interval", "encodings": ["x"]}
-      }],
+      "params": [
+        {
+          "name": "brush",
+          "select": {
+            "type": "interval",
+            "encodings": [
+              "x"
+            ]
+          }
+        }
+      ],
       "encoding": {
         "x": {
-          "timeUnit": "year", "field": "Year",
-          "axis": {"domain": false, "format": "%Y", "tickSize": 0}
+          "timeUnit": "year",
+          "field": "Year",
+          "title": "Year",
+          "axis": {
+            "domain": false,
+            "format": "%Y",
+            "tickSize": 0,
+            "titleFont": "Pontano Sans",
+            "labelFont": "Pontano Sans",
+            "titleFontWeight": 600,
+            "labelFontWeight": 300,
+            "titleFontSize": 12,
+            "labelFontSize": 10,
+            "titlePadding": 10,
+            "labelAlign": "center"
+          }
         },
         "y": {
-          "aggregate": "sum", "field": "Deaths",
+          "aggregate": "sum",
+          "field": "Deaths",
           "axis": null,
           "stack": "center"
         },
-        "color": {"field":"Category", "scale":{"range": ["#996e1f", "##f4c251"]}}
+        "color": {
+          "field": "Category",
+          "scale": {
+            "range": [
+              "#996e1f",
+              "#dcaf49"
+            ]
+          }
+        }
       }
-    }]
-  }
-  
+    }
+  ]
+}
