@@ -17,8 +17,8 @@
     "header": {
       "labelAngle": 0,
       "labelFont": "Outfit",
-      "labelFontWeight": 700,
-      "labelFontSize": 12,
+      "labelFontWeight": 900,
+      "labelFontSize": 13,
       "labelPadding": -5,
       "labelColor": "#996e1f"
     }

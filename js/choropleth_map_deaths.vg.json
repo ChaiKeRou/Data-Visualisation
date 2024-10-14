@@ -1,6 +1,5 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Crude Death Rate Across Malaysian Districts (2022)",
   "width": "container",
   "height": 550,
   "params": [

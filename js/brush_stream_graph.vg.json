@@ -159,13 +159,13 @@
             "format": "%Y",
             "tickSize": 0,
             "titleFont": "Outfit",
-                "labelFont": "Outfit",
-                "titleFontWeight": 700,
-                "labelFontWeight": 200,
-                "titleFontSize": 12,
-                "labelFontSize": 10,
-                "titlePadding": 10,
-                "labelAlign": "center"
+            "labelFont": "Outfit",
+            "titleFontWeight": 700,
+            "labelFontWeight": 200,
+            "titleFontSize": 12,
+            "labelFontSize": 10,
+            "titlePadding": 10,
+            "labelAlign": "center"
           }
         },
         "y": {

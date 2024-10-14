@@ -47,7 +47,9 @@
       "mark": {
         "type": "text",
         "align": "right",
-        "fontSize": 12
+        "font": "Outfit",
+        "fontWeight": 300,
+        "fontSize": 13
       },
       "encoding": {
         "y": {
@@ -92,7 +94,15 @@
               "type": "ordinal",
               "axis": {
                 "labelAngle": 0,
-                "labelPadding": 8
+                "labelPadding": 8,
+                "titleFont": "Outfit",
+                "labelFont": "Outfit",
+                "titleFontWeight": 700,
+                "labelFontWeight": 200,
+                "titleFontSize": 12,
+                "labelFontSize": 10,
+                "titlePadding": 10,
+                "labelAlign": "center"
               }
             },
             "y": {
@@ -154,45 +164,47 @@
                   "#dcd2c8",
                   "#dcd2c8"
                 ]
-              }},
-              "opacity": {
-                "condition": {
-                  "selection": "CauseSelection",
-                  "value": 1
-                },
-                "value": 0.2
-              },
-              "tooltip": [
-                {
-                  "field": "Causes of death",
-                  "title": "Causes of Death",
-                  "type": "nominal"
-                },
-                {
-                  "field": "Year",
-                  "title": "Year",
-                  "type": "quantitative"
-                },
-                {
-                  "field": "Deaths",
-                  "title": "Death Cases",
-                  "type": "quantitative",
-                  "format": ","
-                }
-              ]
-            }
-          },
-          {
-            "mark": {
-              "type": "text",
-              "align": "center",
-              "baseline": "middle",
-              "dx": 0,
-              "dy": 0
+              }
             },
-            "encoding": {
-              "color": {
-                "condition": [{
+            "opacity": {
+              "condition": {
+                "selection": "CauseSelection",
+                "value": 1
+              },
+              "value": 0.2
+            },
+            "tooltip": [
+              {
+                "field": "Causes of death",
+                "title": "Cause of Death",
+                "type": "nominal"
+              },
+              {
+                "field": "Year",
+                "title": "Year",
+                "type": "quantitative"
+              },
+              {
+                "field": "Deaths",
+                "title": "Death Cases",
+                "type": "quantitative",
+                "format": ","
+              }
+            ]
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "center",
+            "baseline": "middle",
+            "dx": 0,
+            "dy": 0
+          },
+          "encoding": {
+            "color": {
+              "condition": [
+                {
                   "test": "datum['Causes of death'] == 'COVID-19 infection (due to)'",
                   "value": "#ebecdf"
                 },
@@ -203,46 +215,89 @@
                 {
                   "test": "datum['Causes of death'] == 'Diabetes mellitus '",
                   "value": "#ebecdf"
-                }],
-                "value": "#3f2b12"
-              },
-              "text": {
-                "field": "Rank",
-                "type": "ordinal"
-              },
-              "x": {
-                "field": "Year",
-                "type": "ordinal"
-              },
-              "y": {
-                "field": "Rank",
-                "type": "ordinal",
-                "sort": [
-                  "1",
-                  "2",
-                  "3",
-                  "4",
-                  "5",
-                  "6",
-                  "7",
-                  "8",
-                  "9",
-                  "10",
-                  "11",
-                  "12",
-                  "13",
-                  "14",
-                  "15",
-                  "16",
-                  "17",
-                  "18",
-                  "19",
-                  "20"
-                ]
-              }
+                }
+              ],
+              "value": "#3f2b12"
+            },
+            "text": {
+              "field": "Rank",
+              "type": "ordinal"
+            },
+            "x": {
+              "field": "Year",
+              "type": "ordinal"
+            },
+            "y": {
+              "field": "Rank",
+              "type": "ordinal",
+              "sort": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10",
+                "11",
+                "12",
+                "13",
+                "14",
+                "15",
+                "16",
+                "17",
+                "18",
+                "19",
+                "20"
+              ]
             }
           }
-        ]
-      }
-    ]
-  }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "fontStyle": "normal",
+            "font": "Outfit",
+            "align": "center",
+            "baseline": "middle",
+            "dx": 40,
+            "dy": -350,
+            "fontSize": 12,
+            "fontWeight": 300,
+            "color": "#393939",
+            "lineBreak": "\n",
+            "lineHeight": 15
+          },
+          "encoding": {
+            "text": {
+              "value": "Old age 65 years and over was continued as the principal causes of death\n for one decade except in 2021 which led by COVID-19 infection."
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "rule",
+            "color": "#393939",
+            "strokeWidth": 0.5
+          },
+          "encoding": {
+            "x": {
+              "value": 350
+            },
+            "x2": {
+              "value": 400
+            },
+            "y": {
+              "value": -25
+            },
+            "y2": {
+              "value": 5
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

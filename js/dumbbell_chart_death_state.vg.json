@@ -1,68 +1,206 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": {"url": "https://raw.githubusercontent.com/ChaiKeRou/3179/main/data/death_category_state.csv"},
-    "width": "container",
-    "background": null,
-    "encoding": {
-      "x": {
-        "field": "deaths",
-        "type": "quantitative",
-        "title": "Deaths"
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/ChaiKeRou/3179/main/data/death_category_state.csv"
+  },
+  "title": "Comparison of Medically Certified and Non-Medically Certified Death Cases by State (2022)",
+  "config": {
+    "title": {
+      "font": "Outfit",
+      "fontSize": 16,
+      "fontWeight": 900,
+      "dx": -50,
+      "dy": -15,
+      "color": "#3f2b12"
+    },
+    "view": {
+      "stroke": null
+    }
+  },
+  "width": "container",
+  "background": null,
+  "layer": [
+    {
+      "encoding": {
+        "x": {
+          "field": "deaths",
+          "type": "quantitative",
+          "title": "Death Cases",
+          "axis": {
+            "titleFont": "Outfit",
+            "labelFont": "Outfit",
+            "titleFontWeight": 700,
+            "labelFontWeight": 200,
+            "titleFontSize": 12,
+            "labelFontSize": 10,
+            "titlePadding": 10
+          }
+        },
+        "y": {
+          "field": "state",
+          "type": "nominal",
+          "title": "State",
+          "axis": {
+            "offset": 5,
+            "ticks": false,
+            "minExtent": 70,
+            "domain": false,
+            "titleFont": "Outfit",
+            "labelFont": "Outfit",
+            "titleFontWeight": 700,
+            "labelFontWeight": 200,
+            "titleFontSize": 12,
+            "labelFontSize": 10,
+            "titlePadding": 10
+          }
+        }
       },
-      "y": {
-        "field": "state",
-        "type": "nominal",
-        "title": "State",
-        "axis": {
-          "offset": 5,
-          "ticks": false,
-          "minExtent": 70,
-          "domain": false
+      "layer": [
+        {
+          "mark": "line",
+          "encoding": {
+            "detail": {
+              "field": "state",
+              "type": "nominal"
+            },
+            "color": {
+              "value": "#f7bc00"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "point",
+            "filled": true
+          },
+          "encoding": {
+            "color": {
+              "field": "category",
+              "type": "nominal",
+              "scale": {
+                "domain": [
+                  "Medically certified",
+                  "Non-medically certified"
+                ],
+                "range": [
+                  "#996e1f",
+                  "#dcaf49"
+                ]
+              },
+              "legend": null,
+              "title": "Year"
+            },
+            "size": {
+              "value": 100
+            },
+            "opacity": {
+              "value": 1
+            },
+            "tooltip": [
+              {
+                "field": "state",
+                "title": "State",
+                "type": "nominal"
+              },
+              {
+                "field": "category",
+                "title": "Category",
+                "type": "nominal"
+              },
+              {
+                "field": "deaths",
+                "title": "Death Cases",
+                "type": "quantitative",
+                "format": ","
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#393939",
+        "strokeWidth": 0.5
+      },
+      "encoding": {
+        "x": {
+          "value": 305
+        },
+        "x2": {
+          "value": 340
+        },
+        "y": {
+          "value": 190
+        },
+        "y2": {
+          "value": 188
         }
       }
     },
-    "layer": [
-      {
-        "mark": "line",
-        "encoding": {
-          "detail": {
-            "field": "state",
-            "type": "nominal"
-          },
-          "color": {"value": "#f7bc00"}
-        }
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#393939",
+        "strokeWidth": 0.5
       },
-      {
-        "mark": {
-          "type": "point",
-          "filled": true
+      "encoding": {
+        "x": {
+          "value": 300
         },
-        "encoding": {
-          "color": {
-            "field": "category",
-            "type": "nominal",
-            "scale": {
-              "domain": ["Medically certified","Non-medically certified"],
-              "range": ["#996e1f", "#f4c251"]
-            },
-            "legend": null,
-            "title": "Year"
-          },
-          "size": {"value": 100},
-          "opacity": {"value": 1},
-          "tooltip":[{
-                      "field": "category",
-                      "title": "Category: ",
-                      "type": "nominal"
-                  },
-                  {
-                      "field": "deaths",
-                      "title": "Death Cases: ",
-                      "type": "quantitative",
-                      "format": ","
-                  }]
+        "x2": {
+          "value": 340
+        },
+        "y": {
+          "value": 210
+        },
+        "y2": {
+          "value": 188
         }
       }
-    ]
-  }
-  
+    },
+    {
+      "mark": {
+        "type": "text",
+        "fontStyle": "normal",
+        "font": "Outfit",
+        "align": "center",
+        "baseline": "middle",
+        "dx": 180,
+        "dy": 90,
+        "fontSize": 12,
+        "fontWeight": 300,
+        "color": "#393939",
+        "lineBreak": "\n",
+        "lineHeight": 15
+      },
+      "encoding": {
+        "text": {
+          "value": "Selangor shows the largest disparity between medically certified\n and non-medically certified death cases."
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "fontStyle": "normal",
+        "font": "Outfit",
+        "align": "center",
+        "baseline": "middle",
+        "dx": 150,
+        "dy": 5,
+        "fontSize": 12,
+        "fontWeight": 300,
+        "color": "#393939",
+        "lineBreak": "\n",
+        "lineHeight": 15
+      },
+      "encoding": {
+        "text": {
+          "value": "Sabah and Sarawak have significantly more non-medically certified\n death cases than medically certified, suggesting challenges\n in healthcare access and certification processes."
+        }
+      }
+    }
+  ]
+}
