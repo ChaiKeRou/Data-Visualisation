@@ -3,7 +3,7 @@ age_range,state,death_rate
 0-14,Kedah,0.63 
 0-14,Kelantan,0.79 
 0-14,Melaka,0.63 
-0-14,Negeri Sembilan,0.54 
+0-14,N. Sembilan,0.54 
 0-14,Pahang,0.75 
 0-14,Perak,0.63 
 0-14,Perlis,0.90 
@@ -12,14 +12,14 @@ age_range,state,death_rate
 0-14,Sarawak,0.64 
 0-14,Selangor,0.50 
 0-14,Terengganu,0.85 
-0-14,W.P. Kuala Lumpur,0.52 
-0-14,W.P. Labuan,0.87 
-0-14,W.P. Putrajaya,0.48 
+0-14,Kuala Lumpur,0.52 
+0-14,Labuan,0.87 
+0-14,Putrajaya,0.48 
 15-40,Johor,0.98 
 15-40,Kedah,1.44 
 15-40,Kelantan,1.31 
 15-40,Melaka,0.94 
-15-40,Negeri Sembilan,1.17 
+15-40,N. Sembilan,1.17 
 15-40,Pahang,1.26 
 15-40,Perak,1.21 
 15-40,Perlis,1.45 
@@ -28,14 +28,14 @@ age_range,state,death_rate
 15-40,Sarawak,1.24 
 15-40,Selangor,0.77 
 15-40,Terengganu,1.42 
-15-40,W.P. Kuala Lumpur,0.66 
-15-40,W.P. Labuan,0.76 
-15-40,W.P. Putrajaya,0.65 
+15-40,Kuala Lumpur,0.66 
+15-40,Labuan,0.76 
+15-40,Putrajaya,0.65 
 41-59,Johor,6.03 
 41-59,Kedah,8.28 
 41-59,Kelantan,8.07 
 41-59,Melaka,6.06 
-41-59,Negeri Sembilan,7.16 
+41-59,N. Sembilan,7.16 
 41-59,Pahang,6.73 
 41-59,Perak,7.52 
 41-59,Perlis,6.76 
@@ -44,14 +44,14 @@ age_range,state,death_rate
 41-59,Sarawak,5.96 
 41-59,Selangor,4.57 
 41-59,Terengganu,8.25 
-41-59,W.P. Kuala Lumpur,3.94 
-41-59,W.P. Labuan,5.15 
-41-59,W.P. Putrajaya,2.88 
+41-59,Kuala Lumpur,3.94 
+41-59,Labuan,5.15 
+41-59,Putrajaya,2.88 
 >=60,Johor,40.96 
 >=60,Kedah,44.98 
 >=60,Kelantan,48.31 
 >=60,Melaka,45.97 
->=60,Negeri Sembilan,43.31 
+>=60,N. Sembilan,43.31 
 >=60,Pahang,46.33 
 >=60,Perak,46.10 
 >=60,Perlis,50.31 
@@ -60,6 +60,6 @@ age_range,state,death_rate
 >=60,Sarawak,37.69 
 >=60,Selangor,28.85 
 >=60,Terengganu,52.52 
->=60,W.P. Kuala Lumpur,37.31 
->=60,W.P. Labuan,32.01 
->=60,W.P. Putrajaya,37.69 
+>=60,Kuala Lumpur,37.31 
+>=60,Labuan,32.01 
+>=60,Putrajaya,37.69 
