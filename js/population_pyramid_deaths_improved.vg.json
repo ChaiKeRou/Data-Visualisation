@@ -34,7 +34,13 @@
           "filter": "datum.gender == 'Male'"
         }
       ],
-      "title": "Male",
+      "title": {
+        "text": "Male",
+        "color": "#2f88a6",
+        "font": "Pontano Sans",
+        "fontSize": 12,
+        "fontWeight": 700
+      },
       "width": 180,
       "height": 447,
       "mark": "bar",
@@ -69,9 +75,15 @@
           "title": "Death Cases",
           "sort": "descending",
           "axis": {
-            "format": "s"
+            "format": "s",
+            "labelAlign": "center"
           },
-          "scale": {"domain": [0, 20000]}
+          "scale": {
+            "domain": [
+              0,
+              20000
+            ]
+          }
         },
         "color": {
           "field": "gender",
@@ -123,7 +135,6 @@
         "font": "Pontano Sans",
         "fontSize": 12,
         "fontWeight": 300
-
       },
       "encoding": {
         "y": {
@@ -161,7 +172,13 @@
           "filter": "datum.gender == 'Female'"
         }
       ],
-      "title": "Female",
+      "title": {
+        "text": "Female",
+        "color": "#e30133",
+        "font": "Pontano Sans",
+        "fontSize": 12,
+        "fontWeight": 700
+      },
       "mark": "bar",
       "width": 180,
       "height": 447,
@@ -194,12 +211,16 @@
           "aggregate": "sum",
           "field": "Deaths_adjusted",
           "title": "Death Cases",
-          
           "axis": {
             "labelExpr": "datum.value * -1/1000 + 'k'",
             "labelLimit": 20
           },
-          "scale": {"domain": [-20000,0]},
+          "scale": {
+            "domain": [
+              -20000,
+              0
+            ]
+          },
           "sort": "descending"
         },
         "color": {
@@ -240,7 +261,6 @@
         ]
       }
     }
-    
   ],
   "config": {
     "view": {

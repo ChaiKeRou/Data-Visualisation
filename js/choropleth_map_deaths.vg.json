@@ -1,23 +1,67 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 1000,
-  "height": 500,
+  "width": "container",
+  "height": 550,
+  "params": [
+    {
+      "name": "zoom_level",
+      "value": 2200,
+      "bind": {
+        "input": "range",
+        "min": 2200,
+        "max": 6200,
+        "step": 1000,
+        "name": "Zoom: "
+      }
+    },
+    {
+      "name": "center_to",
+      "value": [
+        109,
+        0.5
+      ],
+      "bind": {
+        "input": "select",
+        "options": [
+          [
+            109,
+            0.5
+          ],
+          [
+            103,
+            4
+          ],
+          [
+            114,
+            3.5
+          ]
+        ],
+        "labels": [
+          "Malaysia",
+          "West Malaysia",
+          "East Malaysia"
+        ],
+        "name": "Map Centre: "
+      }
+    }
+  ],
   "projection": {
     "type": "equirectangular",
-    "center": [
-      111,
-      1
-    ],
-    "scale": 2200
+    "center": {
+      "expr": "center_to"
+    },
+    "scale": {
+      "expr": "zoom_level"
+    }
   },
   "background": null,
   "layer": [
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/ChaiKeRou/3179/main/js/ocean.json", 
+        "url": "https://raw.githubusercontent.com/ChaiKeRou/3179/main/js/ocean.json",
         "format": {
           "type": "topojson",
-          "feature": "oceans" 
+          "feature": "ne_10m_ocean"
         }
       },
       "mark": {
@@ -40,7 +84,6 @@
         "fill": "lightgray"
       }
     },
-    
     {
       "data": {
         "url": "https://raw.githubusercontent.com/ChaiKeRou/3179/main/js/malaysia.district.json",
@@ -51,8 +94,8 @@
       },
       "mark": {
         "type": "geoshape",
-        "stroke": "#7c5d5d",
-        "strokeWidth": 1
+        "stroke": "#a98080",
+        "strokeWidth": 0.5
       },
       "transform": [
         {
@@ -73,10 +116,6 @@
           "field": "Crude death rate",
           "type": "quantitative",
           "scale": {
-            "domain": [
-              4,
-              9
-            ],
             "range": [
               "#fff4ef",
               "#fcae91",
@@ -118,61 +157,59 @@
           "feature": "malaysia.state"
         }
       },
+      "mark": {
+        "type": "geoshape",
+        "stroke": "#4d1f1f",
+        "strokeWidth": 1.7,
+        "fill": "transparent"
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/ChaiKeRou/3179/main/js/malaysia.district.json",
+        "format": {
+          "type": "topojson",
+          "feature": "malaysia.district"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "stroke": "#7c5d5d",
+        "strokeWidth": 0.5,
+        "fill": "transparent"
+      },
       "transform": [
         {
           "lookup": "properties.name",
           "from": {
             "data": {
-              "url": "https://raw.githubusercontent.com/ChaiKeRou/3179/main/data/crude_death.csv"
+              "url": "https://raw.githubusercontent.com/ChaiKeRou/3179/main/data/crude_death_state_district.csv"
             },
-            "key": "State",
+            "key": "Administrative district",
             "fields": [
-              "Deaths"
+              "Crude death rate",
+              "State"
             ]
           }
         }
       ],
-      "mark": {
-        "type": "geoshape",
-        "stroke": "#7c5d5d",
-        "strokeWidth": 1
-      },
       "encoding": {
         "color": {
-          "field": "Deaths",
-          "type": "quantitative",
-          "scale": {
-            "domain": [
-              4,
-              9
-            ],
-            "range": [
-              "#fee5d9",
-              "#fcae91",
-              "#fb6a4a",
-              "#de2d26",
-              "#a50f15"
-            ]
-          },
-          "legend": {
-            "title": "Crude Death Rate (Per 1,000 Population)",
-            "orient": "bottom-left",
-            "direction": "horizontal",
-            "titleFontSize": 11,
-            "labelFontSize": 10,
-            "gradientLength": 250,
-            "titleLimit": 250,
-            "offset": 5
-          }
+          "value": null
         },
         "tooltip": [
           {
-            "field": "properties.name",
+            "field": "State",
             "type": "nominal",
             "title": "State"
           },
           {
-            "field": "Deaths",
+            "field": "properties.name",
+            "type": "nominal",
+            "title": "District"
+          },
+          {
+            "field": "Crude death rate",
             "type": "quantitative",
             "title": "Crude Death Rate"
           }
@@ -181,13 +218,6 @@
     }
   ],
   "config": {
-    "background": "whitesmoke",
-    "padding": {
-      "top": 20,
-      "left": 10,
-      "right": -50,
-      "bottom": 10
-    },
     "title": {
       "anchor": "start",
       "offset": 10

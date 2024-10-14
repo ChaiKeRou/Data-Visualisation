@@ -7,7 +7,13 @@
     "view": {
       "stroke": ""
     },
-    "font": "Pontano Sans"
+    "font": "Outfit",
+    "padding": {
+      "left": 10,
+      "top": 20,
+      "right": 0,
+      "bottom": 0
+    }
   },
   "background": null,
   "vconcat": [
@@ -26,10 +32,10 @@
                 "domain": false,
                 "format": "%Y",
                 "tickSize": 0,
-                "titleFont": "Pontano Sans",
-                "labelFont": "Pontano Sans",
-                "titleFontWeight": 600,
-                "labelFontWeight": 300,
+                "titleFont": "Outfit",
+                "labelFont": "Outfit",
+                "titleFontWeight": 700,
+                "labelFontWeight": 200,
                 "titleFontSize": 12,
                 "labelFontSize": 10,
                 "titlePadding": 10,
@@ -88,14 +94,14 @@
           "mark": {
             "type": "text",
             "fontStyle": "normal",
-            "font": "Pontano Sans",
+            "font": "Outfit",
             "align": "center",
             "baseline": "middle",
             "dx": 40,
             "dy": -110,
             "fontSize": 12,
             "fontWeight": 300,
-            "color": "black",
+            "color": "#393939",
             "lineBreak": "\n",
             "lineHeight": 15
           },
@@ -108,7 +114,7 @@
         {
           "mark": {
             "type": "rule",
-            "color": "black",
+            "color": "#393939",
             "strokeWidth": 0.5
           },
           "encoding": {
@@ -152,14 +158,14 @@
             "domain": false,
             "format": "%Y",
             "tickSize": 0,
-            "titleFont": "Pontano Sans",
-            "labelFont": "Pontano Sans",
-            "titleFontWeight": 600,
-            "labelFontWeight": 300,
-            "titleFontSize": 12,
-            "labelFontSize": 10,
-            "titlePadding": 10,
-            "labelAlign": "center"
+            "titleFont": "Outfit",
+                "labelFont": "Outfit",
+                "titleFontWeight": 700,
+                "labelFontWeight": 200,
+                "titleFontSize": 12,
+                "labelFontSize": 10,
+                "titlePadding": 10,
+                "labelAlign": "center"
           }
         },
         "y": {
