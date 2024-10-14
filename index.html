@@ -45,7 +45,7 @@
 <body>
   <div class="page">
     <!-- pure grid group -->
-    <div class="pure-g">
+    <div class="pure-g-header">
       <div class="pure-u-1">
         <h1 class="main-title">CAUSE OF DEATH</h1>
         <h1 class="sub-title">IN MALAYSIA (2022)</h1>
@@ -60,9 +60,9 @@
     </div>
 
     <!-- pure grid group -->
-    <div class="pure-g">
+    <div class="pure-g-header">
       <div class="pure-u-1">
-        <h2>Crude Death Rate Across Malaysian Districts</h2>
+        <h2>CRUDE DEATH RATE ACROSS MALAYSIAN DISTRICTS</h2>
       </div>
     </div>
 
@@ -84,9 +84,9 @@
       </div>
     </div>
     <!-- pure grid group -->
-    <div class="pure-g">
+    <div class="pure-g-header">
       <div class="pure-u-1">
-        <h2>Causes of Death Across Varying Age Ranges & Genders</h2>
+        <h2>CAUSE OF DEATH ACROSS AGE & GENDER</h2>
       </div>
     </div>
 
@@ -100,40 +100,30 @@
     <div class="pure-g">
       <div class="pure-u-1-2">
         <div id="vis4" class="vis-container"></div>
+         <p class="population-pyramid-exp">
+          In 2022, Malaysia recorded a total of <span class="keywords">206,525</span> deaths, with <span class="male">117,790</span> males and <span class="female">88,735</span> females. Although males have <span class="keywords">higher</span> mortality rates across most age groups, females <span class="keywords">surpass</span> males in the <span class="keywords">85+</span> age category.
+        </p>
       </div>
 
 
-      
+
       <div class="pure-u-1-2">
         <div id="vis10" class="vis-container"></div>
-        <!-- <p class="population-pyramid-exp">
-          In 2022, Malaysia recorded a total of 206,525 deaths, with 117,790 males and 88,735 females, indicating a
-          significant gender disparity in mortality rates, where male deaths exceeded female deaths by 14.07%.
-        </p>
-
         <p class="population-pyramid-exp">
-          In middle age, deaths sharply increased from 4,632 in the 35-39 years group to 11,865 in the 50-54 years
-          group, with males consistently exhibiting higher mortality rates.
-
-          Among the elderly (60 years and above), the 85 and over group recorded the highest mortality at 27,735 deaths,
-          with females (17,085) outnumbering males (10,650). In contrast, in the 70-74 years age group, males slightly
-          outnumbered females, with 14,446 deaths compared to 10,543 females.
+          Among age groups <span class="keywords">over 60</span>, <span class="keywords">Ischaemic Heart Diseases</span> and <span class="keywords">Pneumonia</span> were the leading causes of death for both males and females, accounting for <span class="male">8,144</span> and <span class="female">5,857</span> deaths, respectively.
         </p>
-        <p class="population-pyramid-exp">
-          Overall, while males have higher mortality rates in most age groups, females outnumber males in the 85+
-          category, highlighting significant changes in mortality patterns with age.</p> -->
       </div>
     </div>
 
 
 
 
-<!-- pure grid group -->
-<div class="pure-g">
-  <div class="pure-u-1">
-    <h2>Trends in Causes of Death Over Time Leading to 2022</h2>
-  </div>
-</div>
+    <!-- pure grid group -->
+    <div class="pure-g-header">
+      <div class="pure-u-1">
+        <h2>TRENDS IN CAUSES OF DEATH LEADING TO 2022</h2>
+      </div>
+    </div>
 
 
 
@@ -152,8 +142,7 @@
           of <span class="keywords">206,525</span> recorded deaths were medically certified, while <span
             class="non-medically-certified">38.9%</span> were not.</p>
 
-        <p>The Department of Statistics Malaysia (DOSM) follows the International Statistical Classification of Diseases
-          and Related Health Problems, 10th Revision (ICD-10), published by the World Health Organization, to
+        <p>The Department of Statistics Malaysia (DOSM) follows ICD-10, published by the World Health Organization, to
           categorize causes of death. These causes are classified as <span class="medically-certified">Medically
             Certified, where verification is done by
             medical officers or coroners</span>, and <span class="non-medically-certified">Non-medically Certified,
@@ -172,6 +161,16 @@
     <div class="pure-g">
       <div class="pure-u-1">
         <div id="vis6" class="vis-container"></div>
+      </div>
+    </div>
+
+    <hr class="hr3">
+
+    <div class="pure-g">
+      <div class="pure-u-1-1 small-font">
+        <h3>Designed by <span class="keyword">Chai Ke Rou</span> on <span class="keyword">October 13, 2024</span>, this visualisation presents the principal causes of death statistics by classification for <span class="keyword">2022</span>.</h3>
+        <h3>The data, provided by the <span class="keyword">Department of Statistics Malaysia (DOSM)</span>, was sourced from <a href="https://newss.statistics.gov.my/newss-portalx/ep/epFreeDownloadContentSearch.seam?cid=690781"  target="_blank">this link</a> and released on <span class="keyword">October 30, 2023</span>. </h3>  
+        <h3>The analysis and visualisation were done using <span class="keyword">Excel</span> and <span class="keyword">Vega-Lite</span>.</h3>
       </div>
     </div>
   </div> <!-- end page -->

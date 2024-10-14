@@ -106,7 +106,7 @@
             },
             {
               "field": "death_cases",
-              "title": "Death Cases",
+              "title": "Death Case",
               "type": "quantitative"
             }
           ]

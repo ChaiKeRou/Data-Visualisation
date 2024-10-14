@@ -375,19 +375,23 @@
             "tooltip": [
               {
                 "field": "ethnic_group",
+                "type": "nominal",
                 "title": "Ethnic Group"
               },
               {
                 "field": "gender",
-                "title": "Sex"
+                "type": "nominal",
+                "title": "Gender"
               },
               {
                 "field": "Deaths",
-                "title": "Death Cases",
+                "title": "Death Case",
+                "type": "quantitative",
                 "format": ","
               },
               {
                 "field": "Crude_death_rate",
+                "type": "quantitative",
                 "title": "Crude Death Rate"
               }
             ],
@@ -403,12 +407,12 @@
           "mark": {
             "type": "text",
             "fontStyle": "normal",
-            "font": "Pontano Sans",
+            "font": "Outfit",
             "align": "center",
             "baseline": "middle",
-            "dx": 40,
+            "dx": 10,
             "dy": 210,
-            "fontSize": 10,
+            "fontSize": 12,
             "fontWeight": 300,
             "color": "black",
             "lineBreak": "\n",

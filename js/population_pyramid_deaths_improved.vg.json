@@ -78,12 +78,12 @@
             "format": "s",
             "labelAlign": "center",
             "titleFont": "Outfit",
-                "labelFont": "Outfit",
-                "titleFontWeight": 700,
-                "labelFontWeight": 200,
-                "titleFontSize": 12,
-                "labelFontSize": 10,
-                "titlePadding": 10
+            "labelFont": "Outfit",
+            "titleFontWeight": 700,
+            "labelFontWeight": 200,
+            "titleFontSize": 12,
+            "labelFontSize": 10,
+            "titlePadding": 10
           },
           "scale": {
             "domain": [
@@ -116,14 +116,19 @@
             "type": "ordinal"
           },
           {
+            "field": "gender",
+            "title": "Gender",
+            "type": "nominal"
+          },
+          {
             "field": "Deaths",
-            "title": "Deaths of Male",
+            "title": "Death Case",
             "type": "quantitative",
             "format": ","
           },
           {
             "field": "total_deaths",
-            "title": "Total Deaths",
+            "title": "Total Death Case",
             "type": "quantitative",
             "format": ","
           }
@@ -174,106 +179,115 @@
       }
     },
     {
-      "transform": [
+      "layer": [
         {
-          "filter": "datum.gender == 'Female'"
-        }
-      ],
-      "title": {
-        "text": "Female",
-        "color": "#e30133",
-        "font": "Outfit",
-        "fontSize": 14,
-        "fontWeight": 700
-      },
-      "mark": "bar",
-      "width": 180,
-      "height": 447,
-      "encoding": {
-        "y": {
-          "field": "Age group",
-          "sort": [
-            ">= 85",
-            "80-84",
-            "75-79",
-            "70-74",
-            "65-69",
-            "60-64",
-            "55-59",
-            "50-54",
-            "45-49",
-            "40-44",
-            "35-39",
-            "30-34",
-            "25-29",
-            "20-24",
-            "15-19",
-            "10-14",
-            "5-9",
-            "0-4"
+          "transform": [
+            {
+              "filter": "datum.gender == 'Female'"
+            }
           ],
-          "axis": null
-        },
-        "x": {
-          "aggregate": "sum",
-          "field": "Deaths_adjusted",
-          "title": "Death Cases",
-          "axis": {
-            "labelExpr": "datum.value * -1/1000 + 'k'",
-            "labelLimit": 20,
-            "titleFont": "Outfit",
+          "title": {
+            "text": "Female",
+            "color": "#e30133",
+            "font": "Outfit",
+            "fontSize": 14,
+            "fontWeight": 700
+          },
+          "mark": "bar",
+          "width": 180,
+          "height": 447,
+          "encoding": {
+            "y": {
+              "field": "Age group",
+              "sort": [
+                ">= 85",
+                "80-84",
+                "75-79",
+                "70-74",
+                "65-69",
+                "60-64",
+                "55-59",
+                "50-54",
+                "45-49",
+                "40-44",
+                "35-39",
+                "30-34",
+                "25-29",
+                "20-24",
+                "15-19",
+                "10-14",
+                "5-9",
+                "0-4"
+              ],
+              "axis": null
+            },
+            "x": {
+              "aggregate": "sum",
+              "field": "Deaths_adjusted",
+              "title": "Death Cases",
+              "axis": {
+                "labelExpr": "datum.value * -1/1000 + 'k'",
+                "labelLimit": 20,
+                "titleFont": "Outfit",
                 "labelFont": "Outfit",
                 "titleFontWeight": 700,
                 "labelFontWeight": 200,
                 "titleFontSize": 12,
                 "labelFontSize": 10,
                 "titlePadding": 10
-          },
-          "scale": {
-            "domain": [
-              -20000,
-              0
+              },
+              "scale": {
+                "domain": [
+                  -20000,
+                  0
+                ]
+              },
+              "sort": "descending"
+            },
+            "color": {
+              "field": "gender",
+              "scale": {
+                "range": [
+                  "#e30133",
+                  "#2f88a6"
+                ]
+              },
+              "legend": null
+            },
+            "opacity": {
+              "condition": {
+                "param": "sex_highlight",
+                "value": 1
+              },
+              "value": 0.2
+            },
+            "tooltip": [
+              {
+                "field": "Age group",
+                "title": "Age Range",
+                "type": "ordinal"
+              },
+              {
+                "field": "gender",
+                "title": "Gender",
+                "type": "nominal"
+              },
+              {
+                "field": "Deaths",
+                "title": "Death Case",
+                "type": "quantitative",
+                "format": ","
+              },
+              {
+                "field": "total_deaths",
+                "title": "Total Death Case",
+                "type": "quantitative",
+                "format": ","
+              }
             ]
-          },
-          "sort": "descending"
-        },
-        "color": {
-          "field": "gender",
-          "scale": {
-            "range": [
-              "#e30133",
-              "#2f88a6"
-            ]
-          },
-          "legend": null
-        },
-        "opacity": {
-          "condition": {
-            "param": "sex_highlight",
-            "value": 1
-          },
-          "value": 0.2
-        },
-        "tooltip": [
-          {
-            "field": "Age group",
-            "title": "Age Range",
-            "type": "ordinal"
-          },
-          {
-            "field": "Deaths",
-            "title": "Deaths of Female",
-            "type": "quantitative",
-            "format": ","
-          },
-          {
-            "field": "total_deaths",
-            "title": "Total Deaths",
-            "type": "quantitative",
-            "format": ","
           }
-        ]
-      }
+        }
+      ]
     }
   ],
   "config": {

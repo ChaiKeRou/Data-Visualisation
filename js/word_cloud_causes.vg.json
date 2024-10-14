@@ -133,7 +133,7 @@
     },
     "tooltip": [
       {"field": "Causes of Death", "title":"Cause of Death", "type": "nominal"},
-      {"field": "Death Cases", "type": "quantitative", "format":","}
+      {"field": "Death Cases", "title": "Death Case", "type": "quantitative", "format":","}
     ]
   }
 }

@@ -182,11 +182,11 @@
               {
                 "field": "Year",
                 "title": "Year",
-                "type": "quantitative"
+                "type": "ordinal"
               },
               {
                 "field": "Deaths",
-                "title": "Death Cases",
+                "title": "Death Case",
                 "type": "quantitative",
                 "format": ","
               }
@@ -205,7 +205,7 @@
             "color": {
               "condition": [
                 {
-                  "test": "datum['Causes of death'] == 'COVID-19 infection (due to)'",
+                  "test": "datum['Causes of death'] == 'COVID-19 infection'",
                   "value": "#ebecdf"
                 },
                 {

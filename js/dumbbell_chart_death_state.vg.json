@@ -7,7 +7,7 @@
   "config": {
     "title": {
       "font": "Outfit",
-      "fontSize": 16,
+      "fontSize": 18,
       "fontWeight": 900,
       "dx": -50,
       "dy": -15,
@@ -109,7 +109,7 @@
               },
               {
                 "field": "deaths",
-                "title": "Death Cases",
+                "title": "Death Case",
                 "type": "quantitative",
                 "format": ","
               }

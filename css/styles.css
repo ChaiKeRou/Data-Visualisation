@@ -20,20 +20,42 @@ h2 {
     font-size: 28px;
     font-weight: 900;
     text-align: center;
-    color: #3f2b12
+    color: #3f2b12;
+    letter-spacing: 1.5px;
 }
 
 p {
     font-family: "Outfit", sans-serif;
     font-weight: 300;
     font-size: 14px;
-    line-height: 22px;
+    line-height: 25px;
     letter-spacing: 0.5px;
+}
+
+.male {
+    color: #2f88a6;
+    font-weight: 900;
+    font-size: 14px;
+}
+
+.female {
+    color: #e30133;
+    font-weight: 900;
+    font-size: 14px;
+}
+
+.population-pyramid-exp {
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 1.5px;
 }
 
 .keywords {
     font-family: "Outfit", sans-serif;
     font-weight: 900;
+    font-size: 14px;
 }
 
 .medically-certified {
@@ -48,6 +70,26 @@ p {
     color: #dcaf49;
 }
 
+.hr3 {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, transparent, #dcd2c8, transparent);
+    padding-top: 5px;
+}
+
+h3 {
+    font-family: "times new roman";
+    font-weight: 200;
+    font-size: 12px;
+    color: black;
+}
+
+.keyword {
+    font-family: "times new roman";
+    font-style: italic;
+    font-weight: 900;
+    font-size: 14px;
+}
 
 /* Google font */
 .rubik-marker-hatch-regular {
@@ -110,25 +152,25 @@ p {
     font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
-  }
+}
 
-  .outfit-light {
+.outfit-light {
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-  }
+}
 
-  .outfit-bold {
+.outfit-bold {
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-  }
+}
 
-  .outfit-black {
+.outfit-black {
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
     font-weight: 900;
     font-style: normal;
-  }
+}

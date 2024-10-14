@@ -77,13 +77,13 @@
               },
               {
                 "field": "Deaths",
-                "title": "Death Cases",
+                "title": "Death Case",
                 "type": "quantitative",
                 "format": ","
               },
               {
                 "field": "Total_deaths",
-                "title": "Total Death Cases",
+                "title": "Total Death Case",
                 "type": "quantitative",
                 "format": ","
               }

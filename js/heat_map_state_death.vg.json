@@ -6,76 +6,139 @@
   "height": 200,
   "width": "container",
   "background": null,
-  "encoding": {
-    "y": {
-      "field": "age_range",
-      "type": "ordinal",
-      "title": "Age Range",
-      "axis": {
-        "titleFont": "Outfit",
-        "labelFont": "Outfit",
-        "titleFontWeight": 700,
-        "labelFontWeight": 200,
-        "titleFontSize": 12,
-        "labelFontSize": 10,
-        "titlePadding": 10
-      }
-    },
-    "x": {
-      "field": "state",
-      "type": "nominal",
-      "title": "State",
-      "axis": {
-        "titleFont": "Outfit",
-        "labelFont": "Outfit",
-        "titleFontWeight": 700,
-        "labelFontWeight": 200,
-        "titleFontSize": 12,
-        "labelFontSize": 9,
-        "titlePadding": 10,
-        "labelAngle": 0,
-        "labelAlign": "center"
-      }
-    }
-  },
   "layer": [
     {
-      "mark": "rect",
       "encoding": {
-        "color": {
-          "field": "death_rate",
-          "type": "quantitative",
-          "scale": {
-            "domain": [
-              0.48,
-              52.52
-            ],
-            "range": [
-              "#fcedcb",
-              "#f29900",
-              "#e17300",
-              "#cf3e23",
-              "#980017"
+        "y": {
+          "field": "age_range",
+          "type": "ordinal",
+          "title": "Age Range",
+          "axis": {
+            "titleFont": "Outfit",
+            "labelFont": "Outfit",
+            "titleFontWeight": 700,
+            "labelFontWeight": 200,
+            "titleFontSize": 12,
+            "labelFontSize": 10,
+            "titlePadding": 10
+          }
+        },
+        "x": {
+          "field": "state",
+          "type": "nominal",
+          "title": "State",
+          "axis": {
+            "titleFont": "Outfit",
+            "labelFont": "Outfit",
+            "titleFontWeight": 700,
+            "labelFontWeight": 200,
+            "titleFontSize": 12,
+            "labelFontSize": 9,
+            "titlePadding": 10,
+            "labelAngle": 0,
+            "labelAlign": "center"
+          }
+        }
+      },
+      "layer": [
+        {
+          "mark": "rect",
+          "encoding": {
+            "color": {
+              "field": "death_rate",
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  0.48,
+                  52.52
+                ],
+                "range": [
+                  "#fcedcb",
+                  "#f29900",
+                  "#e17300",
+                  "#cf3e23",
+                  "#980017"
+                ]
+              },
+              "title": "Death Rate",
+              "legend": null
+            }
+          }
+        },
+        {
+          "mark": "text",
+          "encoding": {
+            "text": {
+              "field": "death_rate",
+              "type": "quantitative"
+            },
+            "color": {
+              "condition": {
+                "test": "datum['death_rate'] < 40",
+                "value": "black"
+              },
+              "value": "white"
+            },"tooltip":[
+              {
+                "field": "state",
+                "title": "State",
+                "type": "nominal"
+              },
+              {
+                "field": "age_range",
+                "title": "Age Range",
+                "type": "nominal"
+              },
+              {
+                "field": "death_rate",
+                "title": "Crude Death Rate",
+                "type": "quantitative",
+                "format": ","
+              }
             ]
-          },
-          "title": "Death Rate",
-          "legend": null
+          }
+        }
+      ]
+    },
+    {
+      "mark": {
+        "type": "text",
+        "fontStyle": "normal",
+        "font": "Outfit",
+        "align": "center",
+        "baseline": "middle",
+        "dx": 150,
+        "dy": -10,
+        "fontSize": 12,
+        "fontWeight": 300,
+        "color": "#393939",
+        "lineBreak": "\n",
+        "lineHeight": 15
+      },
+      "encoding": {
+        "text": {
+          "value": "Terengganu recorded the highest crude death rates for both age groups: 41-59 and over 60. \nIt also ranked as the state with the overall highest crude death rate."
         }
       }
     },
     {
-      "mark": "text",
+      "mark": {
+        "type": "rule",
+        "color": "#393939",
+        "strokeWidth": 0.5
+      },
       "encoding": {
-        "text": {
-          "field": "death_rate",
-          "type": "quantitative"
+        "x": {
+          "value": 720
         },
-        "color": {
-          "condition": {
-            "test": "datum['death_rate'] < 40",
-            "value": "black"
-          },
-          "value": "white"
+        "x2": {
+          "value": 750
+        },
+        "y": {
+          "value": 100
+        },
+        "y2": {
+          "value": 150
         }
       }
     }
@@ -90,7 +153,7 @@
       "color": "#3f2b12"
     },
     "axis": {
-      "grid": true,
+      "grid": false,
       "tickBand": "extent"
     }
   }
