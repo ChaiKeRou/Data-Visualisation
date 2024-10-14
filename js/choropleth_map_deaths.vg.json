@@ -1,5 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Crude Death Rate Across Malaysian Districts (2022)",
   "width": "container",
   "height": 550,
   "params": [
@@ -66,7 +67,7 @@
       },
       "mark": {
         "type": "geoshape",
-        "fill": "#b0e0e6"
+        "fill": "#bcd3eb"
       }
     },
     {
@@ -116,6 +117,10 @@
           "field": "Crude death rate",
           "type": "quantitative",
           "scale": {
+            "domain": [
+              0,
+              15
+            ],
             "range": [
               "#fff4ef",
               "#fcae91",
@@ -125,11 +130,16 @@
             ]
           },
           "legend": {
-            "title": "Crude Death Rate (Per 1,000 Population)",
-            "orient": "bottom-left",
+            "title": "Crude Death Rate (per 1,000 population)",
+            "orient": "bottom-right",
             "direction": "horizontal",
-            "titleFontSize": 11,
+            "titleFont": "Outfit",
+            "labelFont": "Outfit",
+            "titleFontWeight": 700,
+            "labelFontWeight": 300,
+            "titleFontSize": 12,
             "labelFontSize": 10,
+            "titlePadding": 5,
             "gradientLength": 250,
             "titleLimit": 250,
             "offset": 5
@@ -215,13 +225,152 @@
           }
         ]
       }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "longitude": 110,
+            "latitude": 5.5,
+            "label": "S O U T H   C H I N A   S E A"
+          },
+          {
+            "longitude": 109,
+            "latitude": -4,
+            "label": "J A V A    S E A"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "font": "Times New Roman",
+        "fontStyle": "italic",
+        "fontSize": 14,
+        "fontWeight": 700,
+        "align": "center",
+        "baseline": "top",
+        "color": "#0c4d8a",
+        "dx": 5,
+        "dy": -10
+      },
+      "encoding": {
+        "longitude": {
+          "field": "longitude"
+        },
+        "latitude": {
+          "field": "latitude"
+        },
+        "text": {
+          "field": "label"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "longitude": 108,
+            "latitude": 4,
+            "label": "M  A  L  A  Y  S  I  A"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "font": "Arial",
+        "fontSize": 22,
+        "fontWeight": 800,
+        "align": "center",
+        "baseline": "top",
+        "color": "black",
+        "dx": 5,
+        "dy": -10
+      },
+      "encoding": {
+        "longitude": {
+          "field": "longitude"
+        },
+        "latitude": {
+          "field": "latitude"
+        },
+        "text": {
+          "field": "label"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "longitude": 100.5,
+            "latitude": 6.9,
+            "label": "THAILAND"
+          },
+          {
+            "longitude": 101.8,
+            "latitude": -1,
+            "label": "INDONESIA"
+          },
+          {
+            "longitude": 114,
+            "latitude": 0,
+            "label": "INDONESIA"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "font": "Arial",
+        "fontSize": 14,
+        "fontWeight": 700,
+        "align": "center",
+        "baseline": "top",
+        "color": "#393939",
+        "dx": 5,
+        "dy": -10
+      },
+      "encoding": {
+        "longitude": {
+          "field": "longitude"
+        },
+        "latitude": {
+          "field": "latitude"
+        },
+        "text": {
+          "field": "label"
+        }
+      }
+    },
+    {
+      "data": {
+        "graticule": {
+          "step": [
+            5,
+            5
+          ]
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "stroke": "#888",
+        "strokeWidth": 0.5,
+        "strokeDash": [
+          3,
+          3
+        ]
+      }
     }
   ],
   "config": {
     "title": {
-      "anchor": "start",
-      "offset": 10
+      "offset": 10,
+      "font": "Outfit",
+      "fontSize": 25,
+      "fontWeight": 900,
+      "align": "center",
+      "color": "#3f2b12"
     },
+    "font": "Outfit",
     "view": {
       "stroke": null
     }
