@@ -15,6 +15,14 @@
     color: #e9311a;
 }
 
+h2 {
+    font-family: "Outfit";
+    font-size: 28px;
+    font-weight: 900;
+    text-align: center;
+    color: #3f2b12
+}
+
 p {
     font-family: "Outfit", sans-serif;
     font-weight: 300;

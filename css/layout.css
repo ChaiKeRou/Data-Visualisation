@@ -11,6 +11,10 @@ p{
     text-align: justify;
 }
 
+h2{
+    margin: 0;
+}
+
 .population-pyramid-exp{
     margin-left: 50px;
 }

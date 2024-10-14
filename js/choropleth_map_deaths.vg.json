@@ -230,6 +230,49 @@
       "data": {
         "values": [
           {
+            "longitude": 114.9,
+            "latitude": 0.9,
+            "label": "Kanowit (Sarawak) recorded the highest"
+          },
+          {
+            "longitude": 114.3,
+            "latitude": 0.5,
+            "label": "crude death rate in 2022, at 14.34 per 1,000 "
+          },
+          {
+            "longitude": 113.7,
+            "latitude": 0.1,
+            "label": "population, surpassing all other districts in Malaysia."
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "font": "Outfit",
+        "fontSize": 12,
+        "fontWeight": 300,
+        "align": "center",
+        "baseline": "top",
+        "color": "#393939",
+        "dx": 5,
+        "dy": -10
+      },
+      "encoding": {
+        "longitude": {
+          "field": "longitude"
+        },
+        "latitude": {
+          "field": "latitude"
+        },
+        "text": {
+          "field": "label"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
             "longitude": 110,
             "latitude": 5.5,
             "label": "S O U T H   C H I N A   S E A"
@@ -313,7 +356,7 @@
           },
           {
             "longitude": 114,
-            "latitude": 0,
+            "latitude": -1,
             "label": "INDONESIA"
           }
         ]

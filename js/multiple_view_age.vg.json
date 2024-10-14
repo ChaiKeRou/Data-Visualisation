@@ -13,12 +13,20 @@
   "facet": {
     "field": "cause_death",
     "title": "",
-    "type": "nominal"
+    "type": "nominal",
+    "header": {
+      "labelAngle": 0,
+      "labelFont": "Outfit",
+      "labelFontWeight": 700,
+      "labelFontSize": 12,
+      "labelPadding": -5,
+      "labelColor": "#996e1f"
+    }
   },
   "spec": {
     "layer": [
       {
-        "width": 170,
+        "width": 160,
         "height": 200,
         "mark": "bar",
         "selection": {
@@ -34,12 +42,31 @@
           "x": {
             "field": "age",
             "type": "nominal",
-            "title": "Age Range"
+            "title": "Age Range",
+            "axis": {
+              "labelAngle": 0,
+              "titleFont": "Outfit",
+              "labelFont": "Outfit",
+              "titleFontWeight": 700,
+              "labelFontWeight": 200,
+              "titleFontSize": 12,
+              "labelFontSize": 10,
+              "titlePadding": 10
+            }
           },
           "y": {
             "field": "death_cases",
             "type": "quantitative",
-            "title": "Death Cases"
+            "title": "Death Cases",
+            "axis": {
+              "titleFont": "Outfit",
+              "labelFont": "Outfit",
+              "titleFontWeight": 700,
+              "labelFontWeight": 200,
+              "titleFontSize": 12,
+              "labelFontSize": 10,
+              "titlePadding": 10
+            }
           },
           "color": {
             "field": "gender",
@@ -54,7 +81,10 @@
           },
           "xOffset": {
             "field": "gender",
-            "sort": ["Male", "Female"]
+            "sort": [
+              "Male",
+              "Female"
+            ]
           },
           "opacity": {
             "condition": {
@@ -88,7 +118,9 @@
           "align": "center",
           "dy": -6,
           "dx": 5,
-          "fontSize": 9
+          "fontSize": 9,
+          "font": "Outfit",
+          "fontWeight": 300
         },
         "encoding": {
           "x": {
@@ -101,7 +133,10 @@
           },
           "xOffset": {
             "field": "gender",
-            "sort": ["Male", "Female"]
+            "sort": [
+              "Male",
+              "Female"
+            ]
           },
           "text": {
             "field": "death_cases",
@@ -124,7 +159,8 @@
   },
   "config": {
     "facet": {
-      "columns": 2
+      "columns": 2,
+      "spacing": 15
     }
   }
 }

@@ -1,42 +1,97 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": {"url": "https://raw.githubusercontent.com/ChaiKeRou/3179/main/data/death_rate_state.csv"},
-    "height":200,
-    "width": "container",
-    "background": null,
-    "encoding": {
-      "y": {"field": "age_range", "type": "ordinal", "title":"Age Range"},
-      "x": {"field": "state", "type": "nominal", "title":"State"}
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/ChaiKeRou/3179/main/data/death_rate_state.csv"
+  },
+  "height": 200,
+  "width": "container",
+  "background": null,
+  "encoding": {
+    "y": {
+      "field": "age_range",
+      "type": "ordinal",
+      "title": "Age Range",
+      "axis": {
+        "titleFont": "Outfit",
+        "labelFont": "Outfit",
+        "titleFontWeight": 700,
+        "labelFontWeight": 200,
+        "titleFontSize": 12,
+        "labelFontSize": 10,
+        "titlePadding": 10
+      }
     },
-    "layer": [
-      {
-        "mark": "rect",
-        "encoding": {
-          "color": {
-            "field": "death_rate",
-            "type": "quantitative",
-            "scale":{
-              "domain": [0.48, 52.52], 
-            "range": ["#fcedcb","#f29900", "#e17300","#cf3e23", "#980017"] 
-            },
-            "title": "Death Rate",
-            "legend": null
-          }
-        }
-      },
-      {
-        "mark": "text",
-        "encoding": {
-          "text": {"field": "death_rate", "type": "quantitative"},
-          "color": {
-            "condition": {"test": "datum['death_rate'] < 40", "value": "black"},
-            "value": "white"
-          }
+    "x": {
+      "field": "state",
+      "type": "nominal",
+      "title": "State",
+      "axis": {
+        "titleFont": "Outfit",
+        "labelFont": "Outfit",
+        "titleFontWeight": 700,
+        "labelFontWeight": 200,
+        "titleFontSize": 12,
+        "labelFontSize": 9,
+        "titlePadding": 10,
+        "labelAngle": 0,
+        "labelAlign": "center"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": "rect",
+      "encoding": {
+        "color": {
+          "field": "death_rate",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0.48,
+              52.52
+            ],
+            "range": [
+              "#fcedcb",
+              "#f29900",
+              "#e17300",
+              "#cf3e23",
+              "#980017"
+            ]
+          },
+          "title": "Death Rate",
+          "legend": null
         }
       }
-    ],
-    "config": {
-      "axis": {"grid": true, "tickBand": "extent"}
+    },
+    {
+      "mark": "text",
+      "encoding": {
+        "text": {
+          "field": "death_rate",
+          "type": "quantitative"
+        },
+        "color": {
+          "condition": {
+            "test": "datum['death_rate'] < 40",
+            "value": "black"
+          },
+          "value": "white"
+        }
+      }
+    }
+  ],
+  "config": {
+    "title": {
+      "offset": 10,
+      "font": "Outfit",
+      "fontSize": 25,
+      "fontWeight": 900,
+      "align": "center",
+      "color": "#3f2b12"
+    },
+    "axis": {
+      "grid": true,
+      "tickBand": "extent"
     }
   }
-  
+}
