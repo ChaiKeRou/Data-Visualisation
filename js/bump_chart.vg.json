@@ -48,7 +48,7 @@
         "type": "text",
         "align": "right",
         "font": "Outfit",
-        "fontWeight": 300,
+        "fontWeight": 600,
         "fontSize": 13
       },
       "encoding": {
