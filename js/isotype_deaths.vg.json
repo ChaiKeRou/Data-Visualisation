@@ -10,203 +10,203 @@
   "data": {
     "values": [
       {
-        "ethnic_group": "Malay",
+        "ethnic_group": "MALAY",
         "gender": "Male",
         "col": 1,
         "Deaths": 60835,
         "Crude_death_rate": 6.9
       },
       {
-        "ethnic_group": "Malay",
+        "ethnic_group": "MALAY",
         "gender": "Male",
         "col": 2,
         "Deaths": 60835,
         "Crude_death_rate": 6.9
       },
       {
-        "ethnic_group": "Malay",
+        "ethnic_group": "MALAY",
         "gender": "Male",
         "col": 3,
         "Deaths": 60835,
         "Crude_death_rate": 6.9
       },
       {
-        "ethnic_group": "Malay",
+        "ethnic_group": "MALAY",
         "gender": "Female",
         "col": 4,
         "Deaths": 47792,
         "Crude_death_rate": 5.6
       },
       {
-        "ethnic_group": "Malay",
+        "ethnic_group": "MALAY",
         "gender": "Female",
         "col": 5,
         "Deaths": 47792,
         "Crude_death_rate": 5.6
       },
       {
-        "ethnic_group": "Malay",
+        "ethnic_group": "MALAY",
         "gender": "Female",
         "col": 6,
         "Deaths": 47792,
         "Crude_death_rate": 5.6
       },
       {
-        "ethnic_group": "Chinese",
+        "ethnic_group": "CHINESE",
         "gender": "Male",
         "col": 1,
         "Deaths": 30956,
         "Crude_death_rate": 8.8
       },
       {
-        "ethnic_group": "Chinese",
+        "ethnic_group": "CHINESE",
         "gender": "Male",
         "col": 2,
         "Deaths": 30956,
         "Crude_death_rate": 8.8
       },
       {
-        "ethnic_group": "Chinese",
+        "ethnic_group": "CHINESE",
         "gender": "Male",
         "col": 3,
         "Deaths": 30956,
         "Crude_death_rate": 8.8
       },
       {
-        "ethnic_group": "Chinese",
+        "ethnic_group": "CHINESE",
         "gender": "Male",
         "col": 4,
         "Deaths": 30956,
         "Crude_death_rate": 8.8
       },
       {
-        "ethnic_group": "Chinese",
+        "ethnic_group": "CHINESE",
         "gender": "Male",
         "col": 5,
         "Deaths": 30956,
         "Crude_death_rate": 8.8
       },
       {
-        "ethnic_group": "Chinese",
+        "ethnic_group": "CHINESE",
         "gender": "Female",
         "col": 6,
         "Deaths": 22377,
         "Crude_death_rate": 6.6
       },
       {
-        "ethnic_group": "Chinese",
+        "ethnic_group": "CHINESE",
         "gender": "Female",
         "col": 7,
         "Deaths": 22377,
         "Crude_death_rate": 6.6
       },
       {
-        "ethnic_group": "Chinese",
+        "ethnic_group": "CHINESE",
         "gender": "Female",
         "col": 8,
         "Deaths": 22377,
         "Crude_death_rate": 6.6
       },
       {
-        "ethnic_group": "Indians",
+        "ethnic_group": "INDIANS",
         "gender": "Male",
         "col": 1,
         "Deaths": 10178,
         "Crude_death_rate": 10.1
       },
       {
-        "ethnic_group": "Indians",
+        "ethnic_group": "INDIANS",
         "gender": "Male",
         "col": 2,
         "Deaths": 10178,
         "Crude_death_rate": 10.1
       },
       {
-        "ethnic_group": "Indians",
+        "ethnic_group": "INDIANS",
         "gender": "Male",
         "col": 3,
         "Deaths": 10178,
         "Crude_death_rate": 10.1
       },
       {
-        "ethnic_group": "Indians",
+        "ethnic_group": "INDIANS",
         "gender": "Male",
         "col": 4,
         "Deaths": 10178,
         "Crude_death_rate": 10.1
       },
       {
-        "ethnic_group": "Indians",
+        "ethnic_group": "INDIANS",
         "gender": "Male",
         "col": 5,
         "Deaths": 10178,
         "Crude_death_rate": 10.1
       },
       {
-        "ethnic_group": "Indians",
+        "ethnic_group": "INDIANS",
         "gender": "Female",
         "col": 6,
         "Deaths": 6757,
         "Crude_death_rate": 6.8
       },
       {
-        "ethnic_group": "Indians",
+        "ethnic_group": "INDIANS",
         "gender": "Female",
         "col": 7,
         "Deaths": 6757,
         "Crude_death_rate": 6.8
       },
       {
-        "ethnic_group": "Indians",
+        "ethnic_group": "INDIANS",
         "gender": "Female",
         "col": 8,
         "Deaths": 6757,
         "Crude_death_rate": 6.8
       },
       {
-        "ethnic_group": "Indians",
+        "ethnic_group": "INDIANS",
         "gender": "Female",
         "col": 9,
         "Deaths": 6757,
         "Crude_death_rate": 6.8
       },
       {
-        "ethnic_group": "Other Bumiputera",
+        "ethnic_group": "OTHER BUMIPUTERA",
         "gender": "Male",
         "col": 1,
         "Deaths": 12518,
         "Crude_death_rate": 6.7
       },
       {
-        "ethnic_group": "Other Bumiputera",
+        "ethnic_group": "OTHER BUMIPUTERA",
         "gender": "Male",
         "col": 2,
         "Deaths": 12518,
         "Crude_death_rate": 6.7
       },
       {
-        "ethnic_group": "Other Bumiputera",
+        "ethnic_group": "OTHER BUMIPUTERA",
         "gender": "Male",
         "col": 3,
         "Deaths": 12518,
         "Crude_death_rate": 6.7
       },
       {
-        "ethnic_group": "Other Bumiputera",
+        "ethnic_group": "OTHER BUMIPUTERA",
         "gender": "Female",
         "col": 4,
         "Deaths": 9396,
         "Crude_death_rate": 5.2
       },
       {
-        "ethnic_group": "Other Bumiputera",
+        "ethnic_group": "OTHER BUMIPUTERA",
         "gender": "Female",
         "col": 5,
         "Deaths": 9396,
         "Crude_death_rate": 5.2
       },
       {
-        "ethnic_group": "Other Bumiputera",
+        "ethnic_group": "OTHER BUMIPUTERA",
         "gender": "Female",
         "col": 6,
         "Deaths": 9396,
@@ -216,7 +216,7 @@
   },
   "transform": [
     {
-      "calculate": "({'Malay_Male': 'https://raw.githubusercontent.com/ChaiKeRou/3179/refs/heads/main/image/malay_man.png', 'Malay_Female': 'https://raw.githubusercontent.com/ChaiKeRou/3179/refs/heads/main/image/malay_woman.png', 'Chinese_Male': 'https://raw.githubusercontent.com/ChaiKeRou/3179/refs/heads/main/image/chinese_man.png', 'Chinese_Female': 'https://raw.githubusercontent.com/ChaiKeRou/3179/refs/heads/main/image/chinese_woman.png', 'Indians_Male': 'https://raw.githubusercontent.com/ChaiKeRou/3179/refs/heads/main/image/indians_man.png', 'Indians_Female': 'https://raw.githubusercontent.com/ChaiKeRou/3179/refs/heads/main/image/indians_woman.png', 'Other Bumiputera_Male': 'https://raw.githubusercontent.com/ChaiKeRou/3179/refs/heads/main/image/bumiputera_man.png', 'Other Bumiputera_Female': 'https://raw.githubusercontent.com/ChaiKeRou/3179/refs/heads/main/image/bumiputera_woman.png'})[datum.ethnic_group + '_' + datum.gender]",
+      "calculate": "({'MALAY_Male': 'https://raw.githubusercontent.com/ChaiKeRou/3179/refs/heads/main/image/malay_man.png', 'MALAY_Female': 'https://raw.githubusercontent.com/ChaiKeRou/3179/refs/heads/main/image/malay_woman.png', 'CHINESE_Male': 'https://raw.githubusercontent.com/ChaiKeRou/3179/refs/heads/main/image/chinese_man.png', 'CHINESE_Female': 'https://raw.githubusercontent.com/ChaiKeRou/3179/refs/heads/main/image/chinese_woman.png', 'INDIANS_Male': 'https://raw.githubusercontent.com/ChaiKeRou/3179/refs/heads/main/image/indians_man.png', 'INDIANS_Female': 'https://raw.githubusercontent.com/ChaiKeRou/3179/refs/heads/main/image/indians_woman.png', 'OTHER BUMIPUTERA_Male': 'https://raw.githubusercontent.com/ChaiKeRou/3179/refs/heads/main/image/bumiputera_man.png', 'OTHER BUMIPUTERA_Female': 'https://raw.githubusercontent.com/ChaiKeRou/3179/refs/heads/main/image/bumiputera_woman.png'})[datum.ethnic_group + '_' + datum.gender]",
       "as": "image_url"
     },
     {
@@ -242,8 +242,8 @@
       "mark": {
         "type": "text",
         "align": "center",
-        "fontSize": 20,
-        "font": "Bungee Inline",
+        "fontSize": 26,
+        "font": "Protest Strike",
         "color": "#74491f"
       },
       "encoding": {
@@ -273,7 +273,7 @@
             "fontWeight": "bold",
             "align": "left",
             "baseline": "middle",
-            "fontSize": 16,
+            "fontSize": 18,
             "color": "#f7bc00",
             "lineBreak": "\n"
           },
@@ -292,7 +292,7 @@
             "fontWeight": "bold",
             "align": "left",
             "baseline": "middle",
-            "fontSize": 16,
+            "fontSize": 18,
             "color": "#f7bc00",
             "lineBreak": "\n"
           },
@@ -311,7 +311,7 @@
             "fontWeight": "bold",
             "align": "left",
             "baseline": "middle",
-            "fontSize": 16,
+            "fontSize": 18,
             "color": "#f7bc00",
             "lineBreak": "\n"
           },
@@ -330,7 +330,7 @@
             "fontWeight": "bold",
             "align": "left",
             "baseline": "middle",
-            "fontSize": 16,
+            "fontSize": 18,
             "color": "#f7bc00",
             "lineBreak": "\n"
           },

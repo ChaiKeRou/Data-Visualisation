@@ -6,8 +6,8 @@
   "title": "Comparison of Medically Certified and Non-Medically Certified Death Cases by State (2022)",
   "config": {
     "title": {
-      "font": "Outfit",
-      "fontSize": 18,
+      "font": "Lilita One",
+      "fontSize": 16,
       "fontWeight": 900,
       "dx": -50,
       "dy": -15,
