@@ -69,5 +69,5 @@ DataVisualisation/
 
 - **GE15 Election Results (Malaysia)**
   - Interactive visualisation of Malaysia's 15th General Election.
-  - Tableau Public Dashboard: [View Dashboard](https://public.tableau.com/app/profile/ke.rou.chai/viz/TheElectionResultofGE15/Dashboard1#1)
+  - Tableau Public Dashboard: [View Dashboard](https://public.tableau.com/views/DataVisualisation1_17246620597920/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
   - Code not included (Tableau project)
