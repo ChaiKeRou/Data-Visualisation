@@ -8,7 +8,7 @@ This repository contains the code and resources for visualising the causes of de
 
 - **Description:** Visualisations of causes of death across age groups and genders in Malaysia (2022).  
 - **Tools Used:** JavaScript, VegaLite  
-- **GitHub Page:** [View Visualisations](https://chaikerou.github.io/3179/)  
+- **GitHub Page:** [View Visualisations](https://chaikerou.github.io/Data-Visualisation-Project/)  
 - **Design Documentation:** [Five Design Sheet PDF](https://raw.githubusercontent.com/ChaiKeRou/3179/main/docs/Five_Design_Sheet.pdf)  
   Contains design plans, sketches, and reasoning behind the visualisation choices.
 
@@ -30,5 +30,5 @@ This repository contains the code and resources for visualising the causes of de
 
 - **GE15 Election Results (Malaysia)**
   - Interactive visualisation of Malaysia's 15th General Election.
-  - Tableau Public Dashboard: [View Dashboard](https://public.tableau.com/app/profile/ke.rou.chai/viz/DataVisualisation1_17246620597920/Dashboard1)
+  - Tableau Public Dashboard: [View Dashboard](https://public.tableau.com/app/profile/ke.rou.chai/viz/TheElectionResultofGE15/Dashboard1#1)
   - Code not included (Tableau project)
